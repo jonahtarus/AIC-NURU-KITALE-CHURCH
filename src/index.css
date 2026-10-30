@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #061324;
+  --color-primary-container: #0b1e36;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #9cb4d2;
+  --color-inverse-primary: #b0c9e8;
+
+  --color-secondary: #735c00;
+  --color-secondary-container: #fed65b;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #745c00;
+  --color-secondary-fixed: #e5c158;
+  --color-secondary-fixed-dim: #d4af37;
+  --color-gold-accent: #d4af37;
+
+  --color-tertiary: #001702;
+  --color-tertiary-container: #002f06;
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #509f50;
+  --color-tertiary-fixed: #a3f69c;
+  --color-on-tertiary-fixed: #002204;
+  --color-mpesa-green: #2e7d32;
+
+  --color-surface: #fbfcfe;
+  --color-surface-dim: #d4daea;
+  --color-surface-bright: #f9f9ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f6f8fe;
+  --color-surface-container: #e8eeff;
+  --color-surface-container-high: #e3e8f9;
+  --color-surface-container-highest: #dde2f3;
+  --color-surface-variant: #dde2f3;
+
+  --color-on-surface: #161c27;
+  --color-on-surface-variant: #43474d;
+  --color-outline: #74777e;
+  --color-outline-variant: #c3c6ce;
+  --color-background: #f9f9ff;
+  --color-on-background: #161c27;
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-background);
+  color: var(--color-on-surface);
+  margin: 0;
+  padding: 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+.material-symbols-filled {
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+/* Framed shadow styles: defines cards with sculpted shadow depth instead of collecting flat white */
+.card-shadow-frame {
+  background: linear-gradient(180deg, #f8fafd 0%, #e9eff7 100%);
+  box-shadow: 0 16px 38px -8px rgba(6, 19, 36, 0.18), 0 6px 16px -3px rgba(6, 19, 36, 0.10), 0 0 0 1px rgba(6, 19, 36, 0.12), inset 0 1px 1px 0 rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(195, 212, 232, 0.85);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-shadow-frame:hover {
+  background: linear-gradient(180deg, #ffffff 0%, #ecf3fb 100%);
+  box-shadow: 0 24px 50px -10px rgba(6, 19, 36, 0.24), 0 10px 22px -4px rgba(6, 19, 36, 0.14), 0 0 0 1px rgba(212, 175, 55, 0.55), inset 0 1px 2px 0 rgba(255, 255, 255, 1);
+  border-color: rgba(212, 175, 55, 0.55);
+  transform: translateY(-4px);
+}
+
+.card-shadow-frame-dark {
+  background: linear-gradient(180deg, #0f233d 0%, #061324 100%);
+  box-shadow: 0 18px 40px -6px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(229, 193, 88, 0.3), inset 0 1px 1px 0 rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-shadow-frame-dark:hover {
+  box-shadow: 0 26px 52px -8px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(229, 193, 88, 0.55), inset 0 1px 2px 0 rgba(255, 255, 255, 0.2);
+  border-color: rgba(212, 175, 55, 0.6);
+  transform: translateY(-4px);
+}

@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary-fixed-variant":"#5f4100","on-error-container":"#93000a","background":"#f7f9ff","outline":"#74777e","surface-container-lowest":"#ffffff","secondary":"#7d5800","on-background":"#0b1d2d","primary-container":"#122b44","inverse-primary":"#b1c8e8","on-primary":"#ffffff","surface-tint":"#49607c","surface":"#f7f9ff","secondary-fixed-dim":"#f5bd58","on-tertiary-fixed-variant":"#005138","on-secondary":"#ffffff","on-primary-container":"#7b93b1","primary-fixed-dim":"#b1c8e8","tertiary-fixed":"#98f5c9","primary-fixed":"#d1e4ff","secondary-container":"#fec65f","error":"#ba1a1a","on-secondary-fixed":"#271900","on-tertiary-fixed":"#002114","outline-variant":"#c4c6ce","primary":"#00162c","secondary-fixed":"#ffdea9","on-tertiary":"#ffffff","on-surface-variant":"#43474d","surface-container":"#e4efff","on-surface":"#0b1d2d","surface-container-highest":"#d2e4fb","inverse-surface":"#213243","surface-bright":"#f7f9ff","error-container":"#ffdad6","on-tertiary-container":"#44a17b","tertiary-container":"#003120","surface-variant":"#d2e4fb","on-primary-fixed-variant":"#314863","on-primary-fixed":"#011d35","inverse-on-surface":"#e9f1ff","surface-container-low":"#eef4ff","tertiary-fixed-dim":"#7cd8ae","on-secondary-container":"#755100","tertiary":"#001a0f","on-error":"#ffffff","surface-dim":"#cadcf2","surface-container-high":"#d9eaff"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-md":"1rem","space-sm":"0.5rem","space-xl":"2.5rem","space-xs":"0.25rem","gutter-sm":"1rem","space-lg":"1.5rem","margin-sm":"1rem","gutter":"1.5rem","margin":"2rem"},fontFamily:{"title-md":["Plus Jakarta Sans"],"headline-lg-mobile":["Playfair Display"],"body-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-md":["Playfair Display"],"display-sm":["Playfair Display"],"headline-lg":["Playfair Display"],"display-lg":["Playfair Display"],"headline-sm":["Playfair Display"],"label-sm":["Plus Jakarta Sans"],"title-lg":["Plus Jakarta Sans"]},fontSize:{"title-md":["16px",{lineHeight:"24px",fontWeight:"600"}],"headline-lg-mobile":["26px",{lineHeight:"34px",fontWeight:"600"}],"body-md":["15px",{lineHeight:"24px",fontWeight:"400"}],"body-sm":["13px",{lineHeight:"20px",fontWeight:"400"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"label-md":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"headline-md":["24px",{lineHeight:"32px",fontWeight:"600"}],"display-sm":["40px",{lineHeight:"48px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-lg":["32px",{lineHeight:"40px",fontWeight:"600"}],"display-lg":["56px",{lineHeight:"64px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"500"}],"label-sm":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"title-lg":["18px",{lineHeight:"26px",fontWeight:"600"}]}}}};</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary-container text-on-primary px-margin-sm md:px-margin py-2 text-center text-label-sm font-label-sm flex items-center justify-center gap-2"><span class="material-symbols-outlined text-secondary-fixed-dim text-sm">campaign</span><span>Sunday Service: 1st Service 8:00 AM | 2nd Service 10:30 AM (English &amp; Swahili) • Welcome to AIC Nuru Kitale!</span><a class="inline-flex items-center gap-1 text-secondary-fixed font-bold underline hover:text-surface ml-2 transition-colors" data-path="sermons" href="#">Watch Live <span class="material-symbols-outlined text-xs">arrow_forward</span></a></div><div class="h-20 w-full max-w-[1240px] mx-auto px-margin-sm md:px-margin flex items-center justify-between gap-4"><div class="flex items-center gap-3"><img alt="AIC Nuru Kitale Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UiQrzDHBfSafiGCJjY4KQRp6_RraZcur1A89iz8NFc2SQYmqo_N7IvDmw8O6sr-xQTrm8ukjN4zNW7ge7pBfzupv6q46cgPkQLy7Aoz29A92Lc7LfhNeozrysT6AbvbHgq2KsEUAxMbP4fxWaaFYb8JMrcKK-uojy8oNoM9j36RWAWnXccBdkRqCYfuT0bMd209RFjFeH-e-CVLTHgw1vgPsSzrdMc3fB1q2W3dAM"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">AIC NURU</span><span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Kitale</span></div></div><nav class="hidden xl:flex items-center gap-1" data-active-classes="bg-primary text-on-primary font-title-md rounded-lg"><a class="px-3 py-2 text-title-md font-title-md text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" data-path="home" href="#">Home</a><a class="px-3 py-2 text-title-md font-title-md text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" data-path="about-us" href="#">About Us</a><a aria-current="page" class="px-3 py-2 transition-colors bg-primary text-on-primary font-title-md rounded-lg" data-path="sermons" href="#">Sermons</a><a class="px-3 py-2 text-title-md font-title-md text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" data-path="events" href="#">Events</a><a class="px-3 py-2 text-title-md font-title-md text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" data-path="ministries" href="#">Ministries</a><a class="px-3 py-2 text-title-md font-title-md text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" data-path="give" href="#">Give</a><a class="px-3 py-2 text-title-md font-title-md text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-3"><a class="hidden md:inline-flex items-center justify-center px-4 py-2 rounded-lg font-label-md text-label-md bg-transparent text-primary hover:bg-surface-container-high transition-colors" data-path="plan-visit" href="#">Plan Your Visit</a><a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-label-md text-label-md bg-secondary text-on-secondary hover:bg-secondary-container hover:text-on-secondary-container shadow-sm transition-all" data-path="give" href="#"><span class="material-symbols-outlined text-sm">favorite</span><span>Give / Sadaka</span></a><div class="pl-2"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAc_Mj09ypW4_ikiCXtn-1BBlucasC2Vv0g2dICupjBQSHI3d1dXMLmQDauPyFYJGAwHVRwpXjAQry5ZvfY2NeP4ZSE6Qcel3dYIJD0H40OnWPU8FfHmaE2J0hksk5ZU1SNF6XigAj5GFtNNifwpIYyG5l8GhoHnxFcNxq-u3TIwopKyzO0LdEppBV7fjj8L7BzwCXxQuGIuPdCTIu1YLdHiFR6QfjLuF2WvBG2uvM"/></div></div></div></header><main class="w-full pt-20 bg-background flex-1"><div class="flex flex-col w-full">
+<!-- Interactive Audio Sticky Player Drawer -->
+<div class="fixed bottom-6 right-6 z-40 hidden max-w-md w-full bg-primary text-on-primary rounded-xl p-4 shadow-xl flex items-center gap-3 transition-all duration-300" id="audio-dock">
+<div class="w-12 h-12 rounded-lg bg-secondary flex items-center justify-center text-on-secondary shrink-0">
+<span class="material-symbols-outlined text-headline-sm">volume_up</span>
+</div>
+<div class="flex-1 min-w-0">
+<p class="font-title-md text-title-md truncate text-surface-container-lowest" id="player-title">Playing Sermon</p>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim truncate" id="player-speaker">AIC Nuru Sanctuary</p>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<button class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center hover:opacity-90 transition-opacity" onclick="toggleAudioPlay()">
+<span class="material-symbols-outlined text-headline-sm" id="player-icon">pause</span>
+</button>
+<button class="w-8 h-8 rounded-full text-primary-fixed-dim hover:text-surface-container-lowest flex items-center justify-center transition-colors" onclick="closeAudioDock()">
+<span class="material-symbols-outlined text-title-md">close</span>
+</button>
+</div>
+</div>
+<!-- Hero & Search Header -->
+<section class="relative bg-primary-container text-on-primary overflow-hidden pb-16 pt-8">
+<div class="absolute inset-0 opacity-15 pointer-events-none">
+<div class="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-secondary blur-3xl"></div>
+<div class="absolute bottom-0 left-10 w-80 h-80 rounded-full bg-secondary-container blur-3xl"></div>
+</div>
+<div class="w-full max-w-[1240px] mx-auto px-margin-sm md:px-margin relative z-10">
+<div class="flex flex-col max-w-3xl space-y-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-lowest/10 w-fit">
+<span class="material-symbols-outlined text-secondary-fixed text-sm">auto_stories</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed">Spiritual Nourishment • Kitale, Kenya</span>
+</div>
+<h1 class="font-display-lg text-display-lg font-bold text-surface-container-lowest tracking-tight">
+          Sermons &amp; Spiritual Resources
+        </h1>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim leading-relaxed">
+          Equipping your faith journey with weekly Bible teachings, message notes, and video recordings from AIC Nuru Kitale. Rooted in God’s truth, shining Christ’s light across Trans-Nzoia.
+        </p>
+</div>
+<!-- Search & Topic Filter -->
+<div class="mt-8 space-y-4">
+<div class="relative max-w-2xl bg-surface-container-lowest rounded-xl shadow-md p-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-outline ml-2 text-headline-md">search</span>
+<input class="w-full bg-transparent text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none" id="sermon-search-input" onkeyup="filterSermons()" placeholder="Search sermons by title, topic, scripture (e.g. Grace, Matthew, Faith)..." type="text"/>
+<button class="px-5 py-2.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-colors shrink-0">
+            Search
+          </button>
+</div>
+<!-- Filter Chips -->
+<div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none" id="filter-container">
+<button class="filter-tab px-4 py-2 rounded-full font-label-md text-label-md bg-secondary text-on-secondary shrink-0 transition-colors" onclick="setCategory('all', this)">
+            All Sermons
+          </button>
+<button class="filter-tab px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest/15 text-surface-container-lowest hover:bg-surface-container-lowest/25 shrink-0 transition-colors" onclick="setCategory('series', this)">
+            Current Series
+          </button>
+<button class="filter-tab px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest/15 text-surface-container-lowest hover:bg-surface-container-lowest/25 shrink-0 transition-colors" onclick="setCategory('sunday', this)">
+            Sunday Messages
+          </button>
+<button class="filter-tab px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest/15 text-surface-container-lowest hover:bg-surface-container-lowest/25 shrink-0 transition-colors" onclick="setCategory('midweek', this)">
+            Midweek Teachings
+          </button>
+<button class="filter-tab px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest/15 text-surface-container-lowest hover:bg-surface-container-lowest/25 shrink-0 transition-colors" onclick="setCategory('guest', this)">
+            Guest Speakers
+          </button>
+<button class="filter-tab px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest/15 text-surface-container-lowest hover:bg-surface-container-lowest/25 shrink-0 transition-colors" onclick="setCategory('swahili', this)">
+            Swahili Service
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Current Sermon Series Banner -->
+<section class="w-full max-w-[1240px] mx-auto px-margin-sm md:px-margin -mt-8 relative z-20 mb-16">
+<div class="bg-surface-container-lowest rounded-xl shadow-xl overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-0">
+<!-- Media Aspect Left / Top -->
+<div class="lg:col-span-7 relative min-h-[340px] lg:min-h-[460px] bg-primary flex flex-col justify-end p-6 md:p-10">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Vibrant artistic depiction of dawn light breaking over Mount Elgon, illuminating a congregation gathered in reverence with warm golden amber tones and majestic deep navy skies, symbolizing walk as children of light in Africa Inland Church Kitale." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDdqJTQPIBVfRJUFtLry7vtHwrFsncPMVpOK2OVo-ayDDxQVVpLB4Fas8Fi0-Z9egmp3FAfEQht-fbBvTJXrORSLRS7QzZaixW0hRZhmVzOBaVrO3wTOkQZT1B3jMHpnvFYcReTK-KYHXeG-8x5YDMREx-xHf_CR9SSSNGTpc7eUa7uz0ihTOpgjblCNdU4oP_BidBoNcGBJX2UIvAWy78kyDZOYppAaB1BjTJ7mzI')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-transparent"></div>
+<div class="relative z-10 space-y-3">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-on-secondary animate-ping"></span>
+              Current Teaching Series
+            </span>
+<span class="px-3 py-1 rounded-full bg-surface-container-lowest/20 backdrop-blur-md text-surface-container-lowest font-label-sm text-label-sm">
+              4-Part Exposition
+            </span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-surface-container-lowest font-bold leading-tight">
+            Living in the Light: Walk as Children of Light
+          </h2>
+<p class="font-body-md text-body-md text-primary-fixed-dim line-clamp-2">
+            A comprehensive study exploring Paul's exhortation to walk in moral clarity, spiritual readiness, and selfless love in a complex world.
+          </p>
+<div class="pt-2 flex flex-wrap items-center gap-4">
+<button class="px-5 py-2.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md flex items-center gap-2 hover:bg-secondary-container hover:text-on-secondary-container transition-all" onclick="playMedia('Living in the Light: Part 4', 'Rev. Samuel Adebayo')">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+<span>Watch Latest Episode</span>
+</button>
+<a class="px-4 py-2.5 rounded-lg bg-surface-container-lowest/15 backdrop-blur-sm text-surface-container-lowest font-label-md text-label-md hover:bg-surface-container-lowest/25 flex items-center gap-2 transition-colors" href="#series-study-guide">
+<span class="material-symbols-outlined text-headline-sm">download</span>
+<span>Download Series Guide</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Series Overview Right / Bottom -->
+<div class="lg:col-span-5 bg-surface-container p-6 md:p-8 flex flex-col justify-between">
+<div class="space-y-4">
+<div class="flex items-center justify-between pb-2">
+<div>
+<p class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Epistle Exegesis</p>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Scripture Anchor</h3>
+</div>
+<span class="material-symbols-outlined text-secondary text-headline-md">menu_book</span>
+</div>
+<!-- Scripture Callout -->
+<div class="bg-surface-container-low p-4 rounded-lg space-y-2">
+<p class="font-headline-sm text-headline-sm italic text-on-surface font-normal">
+              “For you were once darkness, but now you are light in the Lord. Live as children of light...”
+            </p>
+<p class="font-label-md text-label-md text-secondary font-bold tracking-wide">EPHESIANS 5:8-14 (NIV)</p>
+</div>
+<!-- 4-Part Roadmap -->
+<div class="space-y-3 pt-2">
+<p class="font-label-md text-label-md text-on-surface-variant font-bold">Series Curriculum Schedule</p>
+<div class="space-y-2">
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-2.5">
+<span class="w-6 h-6 rounded-full bg-secondary/15 text-secondary flex items-center justify-center font-label-sm text-label-sm font-bold">1</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Awake, O Sleeper (Eph 5:8-10)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-tertiary-container font-semibold">Archived</span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-2.5">
+<span class="w-6 h-6 rounded-full bg-secondary/15 text-secondary flex items-center justify-center font-label-sm text-label-sm font-bold">2</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Exposing Unfruitful Works (v. 11-13)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-tertiary-container font-semibold">Archived</span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-2.5">
+<span class="w-6 h-6 rounded-full bg-secondary/15 text-secondary flex items-center justify-center font-label-sm text-label-sm font-bold">3</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Making the Most of Every Opportunity</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Current</span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2.5">
+<span class="w-6 h-6 rounded-full bg-outline/20 text-on-surface-variant flex items-center justify-center font-label-sm text-label-sm">4</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Filled with the Spirit (v. 15-20)</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Upcoming</span>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-4 flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">schedule</span> Sundays 8:00 AM &amp; 10:30 AM</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">location_on</span> Main Sanctuary</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Sermons Grid Section -->
+<section class="w-full max-w-[1240px] mx-auto px-margin-sm md:px-margin mb-20">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+<div>
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">The Pulpit Archive</p>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold">Recent Sermons &amp; Expositions</h2>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="results-count">Showing 6 messages</span>
+</div>
+</div>
+<!-- 6 Distinct Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter" id="sermons-grid">
+<!-- Card 1 -->
+<article class="sermon-card bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden" data-category="sunday series" data-search="the power of persistent prayer samuel adebayo luke 18 prayer">
+<div class="relative aspect-video w-full bg-primary overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="Reverend preaching with an open Bible on an oak pulpit in a warm sunlit sanctuary in Kitale, congregation listening intently in quiet prayerfulness, golden afternoon rays through high church windows." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAM0XDDAsUFLlDqIXxWb1W2ys2onUNiJJ8xQiFo5DVtolQ44E7M1PCwN1u_zHChk6JgMKvlIf_yIEDcS5qpg7ybRqmzNziB1Kay06Y33tmO61WfRDpvEzc97_yP0-LazdakfYX4uRyMk2boR_yOl0aEJO2gHaDihhxOA90RvIbuNWQ2Ff5EcjQes-ciuFIJmNElPvhSbUazKC-X1iXjqSz8aNBEIB8eEcVWXplLA14')"></div>
+<div class="absolute inset-0 bg-primary/20"></div>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-2.5 py-1 rounded-full bg-primary/80 backdrop-blur-md text-surface-container-lowest font-label-sm text-label-sm">Sunday Service</span>
+<span class="px-2.5 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">48 mins</span>
+</div>
+<button aria-label="Play Sermon" class="absolute inset-0 flex items-center justify-center group" onclick="playMedia('The Power of Persistent Prayer', 'Rev. Samuel Adebayo')">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest/90 text-primary flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-secondary group-hover:text-on-secondary transition-all">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</button>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+<div class="space-y-2">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1 text-secondary font-bold"><span class="material-symbols-outlined text-sm">bookmark</span> Luke 18:1-8</span>
+<span>Nov 12, 2023</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold hover:text-secondary transition-colors">
+              The Power of Persistent Prayer
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm">person</span> Rev. Samuel Adebayo
+            </p>
+</div>
+<!-- Transcript Collapsible -->
+<div class="pt-2">
+<button class="font-label-sm text-label-sm text-secondary flex items-center gap-1 hover:underline" onclick="toggleTranscript('t-1')">
+<span class="material-symbols-outlined text-sm">description</span> Read Key Excerpt
+            </button>
+<div class="hidden mt-2 p-3 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface-variant leading-relaxed" id="t-1">
+              “God is not reluctant to hear His elect. Persistence in prayer does not overcome God's reluctance; it lays hold of His divine willingness.”
+            </div>
+</div>
+<!-- Actions -->
+<div class="pt-2 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-primary font-label-sm text-label-sm hover:bg-secondary hover:text-on-secondary transition-colors flex items-center gap-1" onclick="playMedia('The Power of Persistent Prayer', 'Rev. Samuel Adebayo')">
+<span class="material-symbols-outlined text-sm">headphones</span> Listen
+              </button>
+<a class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" href="#pdf-download" title="Download Sermon Study Notes (PDF)">
+<span class="material-symbols-outlined text-headline-sm">picture_as_pdf</span>
+</a>
+</div>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-on-surface-variant">Video • Audio</span>
+</div>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="sermon-card bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden" data-category="sunday" data-search="anchored in stormy seasons grace chebet hebrews 6 hope">
+<div class="relative aspect-video w-full bg-primary overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="Kenyan female pastor speaking with passion and grace at a modern pulpit, holding a leather-bound Bible, warm glowing church background with ambient navy and gold lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAjmaL1qZ0BtuBeQfTLNHADQOARHIKtuVPihQkJmrXvs_unGw1cpD2GXdc-WRwY_VEYd8zbXDPgFaaMKxxmvRtkNoy62dxiUGgAdoJyMo5Ve1KjC9KKDnSqm_2JTlt82OFqRJZcwHLl94KXsaKiV7wG2DzHWvElyoi4IsDPxPDkx7Kw9uOjDuYZjPvykB2M86Voou7IjT3UgociYXF85QwyRRp0-Pn3dSqw_UyHDPQ')"></div>
+<div class="absolute inset-0 bg-primary/20"></div>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-2.5 py-1 rounded-full bg-primary/80 backdrop-blur-md text-surface-container-lowest font-label-sm text-label-sm">Sunday Service</span>
+<span class="px-2.5 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">42 mins</span>
+</div>
+<button aria-label="Play Sermon" class="absolute inset-0 flex items-center justify-center group" onclick="playMedia('Anchored in Stormy Seasons', 'Pastor Grace Chebet')">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest/90 text-primary flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-secondary group-hover:text-on-secondary transition-all">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</button>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+<div class="space-y-2">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1 text-secondary font-bold"><span class="material-symbols-outlined text-sm">bookmark</span> Hebrews 6:19</span>
+<span>Nov 5, 2023</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold hover:text-secondary transition-colors">
+              Anchored in Stormy Seasons
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm">person</span> Pastor Grace Chebet
+            </p>
+</div>
+<div class="pt-2">
+<button class="font-label-sm text-label-sm text-secondary flex items-center gap-1 hover:underline" onclick="toggleTranscript('t-2')">
+<span class="material-symbols-outlined text-sm">description</span> Read Key Excerpt
+            </button>
+<div class="hidden mt-2 p-3 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface-variant leading-relaxed" id="t-2">
+              “Our anchor is not fixed to fleeting circumstances or worldly stability; it is cast upward behind the veil where Jesus our forerunner has entered.”
+            </div>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-primary font-label-sm text-label-sm hover:bg-secondary hover:text-on-secondary transition-colors flex items-center gap-1" onclick="playMedia('Anchored in Stormy Seasons', 'Pastor Grace Chebet')">
+<span class="material-symbols-outlined text-sm">headphones</span> Listen
+              </button>
+<a class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" href="#pdf-download" title="Download Sermon Study Notes (PDF)">
+<span class="material-symbols-outlined text-headline-sm">picture_as_pdf</span>
+</a>
+</div>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-on-surface-variant">Video • Audio</span>
+</div>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="sermon-card bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden" data-category="midweek" data-search="stewardship of the heart peter wafula malachi 3 giving tithe">
+<div class="relative aspect-video w-full bg-primary overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="Senior African church elder teaching Bible study in a quiet classroom setting, whiteboard with scriptures, gentle respectful atmosphere, deep navy and warm wood tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCZy2iCBEnmIjgLjXmnzzr8nxBpecT7GYCFf8bVnaKMQttz7AYM7C8XQ6QAPTc2zKMYtzwu6fGHbcMIjpWmATh03dZ7XFQvg_ThrBXzSbQVbbsH2CRP_XEmnvFZW2R3ojlU77ADDIcm5_6DuQ1kZi76puLXYprh1MTgCp5jFf0C3R6BoV-HmpXzZJd6DhSvOGrc9iOLbYLqn2imybWzFDBtOXXCvLSWTWYRPY-Z59c')"></div>
+<div class="absolute inset-0 bg-primary/20"></div>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-2.5 py-1 rounded-full bg-primary/80 backdrop-blur-md text-surface-container-lowest font-label-sm text-label-sm">Midweek Bible Study</span>
+<span class="px-2.5 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">36 mins</span>
+</div>
+<button aria-label="Play Sermon" class="absolute inset-0 flex items-center justify-center group" onclick="playMedia('Stewardship of the Heart', 'Elder Peter Wafula')">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest/90 text-primary flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-secondary group-hover:text-on-secondary transition-all">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</button>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+<div class="space-y-2">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1 text-secondary font-bold"><span class="material-symbols-outlined text-sm">bookmark</span> Malachi 3:10</span>
+<span>Oct 29, 2023</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold hover:text-secondary transition-colors">
+              Stewardship of the Heart
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm">person</span> Elder Peter Wafula
+            </p>
+</div>
+<div class="pt-2">
+<button class="font-label-sm text-label-sm text-secondary flex items-center gap-1 hover:underline" onclick="toggleTranscript('t-3')">
+<span class="material-symbols-outlined text-sm">description</span> Read Key Excerpt
+            </button>
+<div class="hidden mt-2 p-3 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface-variant leading-relaxed" id="t-3">
+              “God desires our wholehearted surrender before our tangible offerings. When the heart belongs completely to God, generous hands naturally follow.”
+            </div>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-primary font-label-sm text-label-sm hover:bg-secondary hover:text-on-secondary transition-colors flex items-center gap-1" onclick="playMedia('Stewardship of the Heart', 'Elder Peter Wafula')">
+<span class="material-symbols-outlined text-sm">headphones</span> Listen
+              </button>
+<a class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" href="#pdf-download" title="Download Sermon Study Notes (PDF)">
+<span class="material-symbols-outlined text-headline-sm">picture_as_pdf</span>
+</a>
+</div>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-on-surface-variant">Audio Only</span>
+</div>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="sermon-card bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden" data-category="sunday" data-search="renewing the youth mindset john kiptoo romans 12 youth">
+<div class="relative aspect-video w-full bg-primary overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="Energetic youth pastor addressing a youthful African church congregation in Kitale, modern acoustic guitars on stage, vibrant amber stage wash, engaging and inspirational mood." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDzIiMDQGmwwP6rsTGdHjqZ7jCQtZkM9hjB1aKphItz3oHLHA6lb0RQE2Zkm4abnE5fGTOhjBouLoo8gfWXLd1es5uZquvgCAd3CWFblT8pqs7omj43rckoiWuRsPc9OCJBTY3AN9cDraLkK3DrUoBRAe1qviDe3aHEduQPWFIFZvDDQoGDRkWGzHGO7VQor0kljnFmC7Kq-bZ-oKxUKSs_i_tlDzxSGrcl5ALFIH0')"></div>
+<div class="absolute inset-0 bg-primary/20"></div>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-2.5 py-1 rounded-full bg-primary/80 backdrop-blur-md text-surface-container-lowest font-label-sm text-label-sm">Youth Kesha Service</span>
+<span class="px-2.5 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">51 mins</span>
+</div>
+<button aria-label="Play Sermon" class="absolute inset-0 flex items-center justify-center group" onclick="playMedia('Renewing the Youth Mindset', 'Pastor John Kiptoo')">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest/90 text-primary flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-secondary group-hover:text-on-secondary transition-all">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</button>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+<div class="space-y-2">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1 text-secondary font-bold"><span class="material-symbols-outlined text-sm">bookmark</span> Romans 12:2</span>
+<span>Oct 22, 2023</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold hover:text-secondary transition-colors">
+              Renewing the Youth Mindset
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm">person</span> Pastor John Kiptoo
+            </p>
+</div>
+<div class="pt-2">
+<button class="font-label-sm text-label-sm text-secondary flex items-center gap-1 hover:underline" onclick="toggleTranscript('t-4')">
+<span class="material-symbols-outlined text-sm">description</span> Read Key Excerpt
+            </button>
+<div class="hidden mt-2 p-3 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface-variant leading-relaxed" id="t-4">
+              “Do not allow digital culture to squeeze you into its mold. The gospel gives young believers the clarity to stand out as beacons of integrity in Kitale.”
+            </div>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-primary font-label-sm text-label-sm hover:bg-secondary hover:text-on-secondary transition-colors flex items-center gap-1" onclick="playMedia('Renewing the Youth Mindset', 'Pastor John Kiptoo')">
+<span class="material-symbols-outlined text-sm">headphones</span> Listen
+              </button>
+<a class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" href="#pdf-download" title="Download Sermon Study Notes (PDF)">
+<span class="material-symbols-outlined text-headline-sm">picture_as_pdf</span>
+</a>
+</div>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-on-surface-variant">Video • Audio</span>
+</div>
+</div>
+</article>
+<!-- Card 5 -->
+<article class="sermon-card bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden" data-category="swahili sunday" data-search="grace that heals the broken samuel adebayo psalm 147 neema healing">
+<div class="relative aspect-video w-full bg-primary overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="Warm African church service with pastoral hands lifted in benediction, congregants embracing in comfort and prayer, warm golden ambient sunlight through stained glass." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDcyYOqTOzjINnbDdizGJd1-WyHGTJTluMBqJzsVCahFUP6cTGDiQy4g6BVvvgXxgXQloNjphaLpKsvPhIlfugV2nAyK2n-G8qmgb7xF9iwNv3CtnfdK7Ox8dAheedoYyJrJfqpQzmAhcTkrJgT5nb8GXU15ARpKd49OrDRgmjcs0UhF9tf9L5AEiCUTYJZwlFmu5W-BA8Y11mdUkAPBjF7PqB0B5eYqAcXnZkqX0A')"></div>
+<div class="absolute inset-0 bg-primary/20"></div>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-2.5 py-1 rounded-full bg-tertiary-container text-tertiary-fixed font-label-sm text-label-sm">Swahili / Eng Service</span>
+<span class="px-2.5 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">45 mins</span>
+</div>
+<button aria-label="Play Sermon" class="absolute inset-0 flex items-center justify-center group" onclick="playMedia('Grace That Heals the Broken', 'Rev. Samuel Adebayo')">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest/90 text-primary flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-secondary group-hover:text-on-secondary transition-all">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</button>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+<div class="space-y-2">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1 text-secondary font-bold"><span class="material-symbols-outlined text-sm">bookmark</span> Psalm 147:3</span>
+<span>Oct 15, 2023</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold hover:text-secondary transition-colors">
+              Grace That Heals the Broken
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm">person</span> Rev. Samuel Adebayo
+            </p>
+</div>
+<div class="pt-2">
+<button class="font-label-sm text-label-sm text-secondary flex items-center gap-1 hover:underline" onclick="toggleTranscript('t-5')">
+<span class="material-symbols-outlined text-sm">description</span> Read Key Excerpt
+            </button>
+<div class="hidden mt-2 p-3 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface-variant leading-relaxed" id="t-5">
+              “He heals the brokenhearted and binds up their wounds. Christ does not bypass our scars; He enters them with His comforting resurrecting grace.”
+            </div>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-primary font-label-sm text-label-sm hover:bg-secondary hover:text-on-secondary transition-colors flex items-center gap-1" onclick="playMedia('Grace That Heals the Broken', 'Rev. Samuel Adebayo')">
+<span class="material-symbols-outlined text-sm">headphones</span> Listen
+              </button>
+<a class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" href="#pdf-download" title="Download Sermon Study Notes (PDF)">
+<span class="material-symbols-outlined text-headline-sm">picture_as_pdf</span>
+</a>
+</div>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-on-surface-variant">Video • Audio</span>
+</div>
+</div>
+</article>
+<!-- Card 6 -->
+<article class="sermon-card bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden" data-category="sunday guest" data-search="the good shepherds guidance samuel adebayo john 10 shepherd">
+<div class="relative aspect-video w-full bg-primary overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="Choral choir in crisp African robes singing with joyful smiles in an illuminated modern sanctuary in Kitale, warm stage spotlights with golden backlight and blue atmospheric rim." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDJ8RcC0Mk0hmSPE33g_wz6__ws8XV-neifD01_F4I5H2qYLxn8jCcjohVdysjOnrqwNqa7f532Fj5iyUx2G6U6m_Ra9ZXkEKcu-UnOpSULD_bc4Hl6nslG8j_uMJczPvymTT3X6VM1i1G1THuRPwpi609AdVe5G93B50kedUTPgGMLaSonfnHlIKVoea2cW_F0IBA6yPYms6PeGM-kYx4HymkLWdVXRLA_O0iEDFo')"></div>
+<div class="absolute inset-0 bg-primary/20"></div>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-2.5 py-1 rounded-full bg-primary/80 backdrop-blur-md text-surface-container-lowest font-label-sm text-label-sm">Sunday Service</span>
+<span class="px-2.5 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">49 mins</span>
+</div>
+<button aria-label="Play Sermon" class="absolute inset-0 flex items-center justify-center group" onclick="playMedia('The Good Shepherd’s Guidance', 'Rev. Samuel Adebayo')">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest/90 text-primary flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-secondary group-hover:text-on-secondary transition-all">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</button>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+<div class="space-y-2">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1 text-secondary font-bold"><span class="material-symbols-outlined text-sm">bookmark</span> John 10:11</span>
+<span>Oct 8, 2023</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold hover:text-secondary transition-colors">
+              The Good Shepherd's Guidance
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm">person</span> Rev. Samuel Adebayo
+            </p>
+</div>
+<div class="pt-2">
+<button class="font-label-sm text-label-sm text-secondary flex items-center gap-1 hover:underline" onclick="toggleTranscript('t-6')">
+<span class="material-symbols-outlined text-sm">description</span> Read Key Excerpt
+            </button>
+<div class="hidden mt-2 p-3 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface-variant leading-relaxed" id="t-6">
+              “The sheep recognize His voice because He walks before them through dark ravines and leads them faithfully into fruitful pastures.”
+            </div>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-primary font-label-sm text-label-sm hover:bg-secondary hover:text-on-secondary transition-colors flex items-center gap-1" onclick="playMedia('The Good Shepherd’s Guidance', 'Rev. Samuel Adebayo')">
+<span class="material-symbols-outlined text-sm">headphones</span> Listen
+              </button>
+<a class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" href="#pdf-download" title="Download Sermon Study Notes (PDF)">
+<span class="material-symbols-outlined text-headline-sm">picture_as_pdf</span>
+</a>
+</div>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-on-surface-variant">Video • Audio</span>
+</div>
+</div>
+</article>
+</div>
+<!-- Empty State for Search (Hidden by default) -->
+<div class="hidden text-center py-16 bg-surface-container-low rounded-xl mt-6" id="no-sermons-alert">
+<span class="material-symbols-outlined text-headline-lg text-outline">search_off</span>
+<p class="font-headline-md text-headline-md text-on-surface mt-2 font-bold">No Sermons Found</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Try another keyword, Scripture reference, or clear filters.</p>
+</div>
+</section>
+<!-- Media Subscription & Podcast Channels + Physical Media Accessibility -->
+<section class="w-full bg-surface-container-low py-16">
+<div class="w-full max-w-[1240px] mx-auto px-margin-sm md:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+<!-- Digital Channels (Listen on the go) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-8 shadow-sm flex flex-col justify-between space-y-6">
+<div class="space-y-3">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/15 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm">podcasts</span>
+<span>Everywhere You Go</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold">Listen On The Go</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Never miss weekly spiritual food. Subscribe to the AIC Nuru Kitale podcast channel across popular streaming services or save lightweight MP3s directly to your mobile phone.
+            </p>
+</div>
+<!-- Channel Links Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Spotify -->
+<a class="p-4 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors flex items-center gap-3" href="https://spotify.com" rel="noopener noreferrer" target="_blank">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-surface-container-lowest">
+<span class="material-symbols-outlined text-headline-sm">graphic_eq</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-bold">Spotify</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">AIC Nuru Sermons</p>
+</div>
+</a>
+<!-- Apple Podcasts -->
+<a class="p-4 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors flex items-center gap-3" href="https://podcasts.apple.com" rel="noopener noreferrer" target="_blank">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-surface-container-lowest">
+<span class="material-symbols-outlined text-headline-sm">podcasts</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-bold">Apple Podcasts</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Weekly Audio Feed</p>
+</div>
+</a>
+<!-- YouTube Live -->
+<a class="p-4 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors flex items-center gap-3" href="https://youtube.com" rel="noopener noreferrer" target="_blank">
+<div class="w-10 h-10 rounded-full bg-error text-on-error flex items-center justify-center">
+<span class="material-symbols-outlined text-headline-sm">smart_display</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-bold">YouTube Live</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sunday 10:30 AM</p>
+</div>
+</a>
+<!-- Direct MP3 Archive -->
+<a class="p-4 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors flex items-center gap-3" href="#archive-download">
+<div class="w-10 h-10 rounded-full bg-tertiary-container text-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-headline-sm">download</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-bold">Direct MP3 Vault</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Offline Low Data (15MB)</p>
+</div>
+</a>
+</div>
+<div class="pt-2 flex items-center gap-2 text-body-sm font-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-secondary">wifi_off</span>
+<span>All media optimized for low-bandwidth cellular connections across Trans-Nzoia County.</span>
+</div>
+</div>
+<!-- Elderly / Physical Media Accessibility Request -->
+<div class="lg:col-span-5 bg-primary-container text-on-primary rounded-xl p-8 shadow-sm flex flex-col justify-between space-y-6">
+<div class="space-y-3">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-lowest/15 text-secondary-fixed-dim font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm">elderly</span>
+<span>Pastoral Outreach Care</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-surface-container-lowest font-bold">
+              Audio CD &amp; Flash Drive Ministry
+            </h3>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim leading-relaxed">
+              We provide free monthly Audio CDs and USB Flash Drives with preloaded Swahili and English sermons for our elderly church family, hospital-bound members, and home fellowships in Kitale.
+            </p>
+</div>
+<!-- Quick Request Form -->
+<form class="space-y-3" id="media-request-form" onsubmit="handleMediaRequest(event)">
+<div>
+<label class="block font-label-sm text-label-sm text-primary-fixed-dim mb-1" for="req-name">Recipient or Guardian's Name</label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none" id="req-name" placeholder="e.g. Mzee Joshua Wanyonyi" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-primary-fixed-dim mb-1" for="req-phone">M-Pesa / Contact Phone</label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none" id="req-phone" placeholder="0712 345 678" required="" type="tel"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-primary-fixed-dim mb-1" for="req-type">Preferred Format</label>
+<select class="w-full px-3 py-2 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm focus:outline-none" id="req-type">
+<option value="cd">Standard Audio CD (Plays on radio/car)</option>
+<option value="usb">USB Flash Drive (High-Capacity)</option>
+<option value="jumuiya">Jumuiya Fellowship Care Delivery</option>
+</select>
+</div>
+<button class="w-full mt-2 py-3 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-colors flex items-center justify-center gap-2" type="submit">
+<span class="material-symbols-outlined text-sm">send</span>
+<span>Request for a Loved One</span>
+</button>
+<p class="hidden text-center font-label-sm text-label-sm text-tertiary-fixed pt-1" id="request-feedback">
+              ✓ Request submitted to AIC Nuru Pastoral Welfare Team!
+            </p>
+</form>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim text-center">
+            Pick up also available every Sunday at the Sanctuary Media Desk.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive JavaScript logic for Sermons filtering and preview player -->
+<script>
+    function playMedia(title, speaker) {
+      const dock = document.getElementById('audio-dock');
+      const playerTitle = document.getElementById('player-title');
+      const playerSpeaker = document.getElementById('player-speaker');
+      const playerIcon = document.getElementById('player-icon');
+      
+      playerTitle.textContent = title;
+      playerSpeaker.textContent = speaker;
+      playerIcon.textContent = 'pause';
+      
+      dock.classList.remove('hidden');
+    }
+
+    function toggleAudioPlay() {
+      const icon = document.getElementById('player-icon');
+      if (icon.textContent === 'pause') {
+        icon.textContent = 'play_arrow';
+      } else {
+        icon.textContent = 'pause';
+      }
+    }
+
+    function closeAudioDock() {
+      const dock = document.getElementById('audio-dock');
+      dock.classList.add('hidden');
+    }
+
+    function toggleTranscript(id) {
+      const el = document.getElementById(id);
+      if (el.classList.contains('hidden')) {
+        el.classList.remove('hidden');
+      } else {
+        el.classList.add('hidden');
+      }
+    }
+
+    let activeFilter = 'all';
+
+    function setCategory(cat, btn) {
+      activeFilter = cat;
+      const tabs = document.querySelectorAll('.filter-tab');
+      tabs.forEach(t => {
+        t.classList.remove('bg-secondary', 'text-on-secondary');
+        t.classList.add('bg-surface-container-lowest/15', 'text-surface-container-lowest');
+      });
+      btn.classList.remove('bg-surface-container-lowest/15', 'text-surface-container-lowest');
+      btn.classList.add('bg-secondary', 'text-on-secondary');
+      filterSermons();
+    }
+
+    function filterSermons() {
+      const searchInput = document.getElementById('sermon-search-input').value.toLowerCase();
+      const cards = document.querySelectorAll('.sermon-card');
+      const noResults = document.getElementById('no-sermons-alert');
+      const resultsCount = document.getElementById('results-count');
+      let visible = 0;
+
+      cards.forEach(card => {
+        const categories = card.getAttribute('data-category') || '';
+        const searchTerms = card.getAttribute('data-search') || '';
+        
+        const matchesCategory = (activeFilter === 'all') || categories.includes(activeFilter);
+        const matchesSearch = searchTerms.includes(searchInput) || searchInput.trim() === '';
+
+        if (matchesCategory && matchesSearch) {
+          card.classList.remove('hidden');
+          visible++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      if (resultsCount) {
+        resultsCount.textContent = `Showing ${visible} message${visible === 1 ? '' : 's'}`;
+      }
+
+      if (visible === 0) {
+        noResults.classList.remove('hidden');
+      } else {
+        noResults.classList.add('hidden');
+      }
+    }
+
+    function handleMediaRequest(e) {
+      e.preventDefault();
+      const feedback = document.getElementById('request-feedback');
+      const form = document.getElementById('media-request-form');
+      feedback.classList.remove('hidden');
+      form.reset();
+      setTimeout(() => {
+        feedback.classList.add('hidden');
+      }, 5000);
+    }
+  </script>
+</div></main><footer class="w-full bg-primary text-on-primary pt-space-xl pb-space-lg"><div class="w-full max-w-[1240px] mx-auto px-margin-sm md:px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-xl"><div class="space-y-4"><div class="flex items-center gap-3"><div class="flex flex-col"><span class="font-headline-md text-headline-md text-surface-container-lowest tracking-tight">AIC Nuru Kitale</span><span class="font-label-sm text-label-sm text-secondary-fixed-dim uppercase tracking-wider">Africa Inland Church • Kenya</span></div></div><p class="font-body-sm text-body-sm text-primary-fixed-dim leading-relaxed">Radiating Christ's love, hope, and truth across Trans-Nzoia and beyond. Grounded in Scripture, thriving in fellowship, and committed to kingdom service.</p><div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-lowest/10 text-tertiary-fixed text-label-sm font-label-sm"><span class="material-symbols-outlined text-sm">payments</span><span>M-Pesa Paybill: <strong>522522</strong> • A/C: <strong>NURU</strong></span></div></div><div class="space-y-3"><h3 class="font-title-lg text-title-lg text-secondary-fixed">Quick Links</h3><ul class="space-y-2 font-body-sm text-body-sm text-primary-fixed-dim"><li><a class="hover:text-surface transition-colors" data-path="about-us" href="#">About Us</a></li><li><a class="hover:text-surface transition-colors" data-path="statement-of-faith" href="#">Statement of Faith</a></li><li><a class="hover:text-surface transition-colors" data-path="sermons" href="#">Sermons Archive</a></li><li><a class="hover:text-surface transition-colors" data-path="events" href="#">Church Calendar</a></li><li><a class="hover:text-surface transition-colors" data-path="ministries" href="#">Youth Ministry &amp; Fellowship</a></li></ul></div><div class="space-y-3"><h3 class="font-title-lg text-title-lg text-secondary-fixed">Gathering Times</h3><div class="space-y-2 font-body-sm text-body-sm text-primary-fixed-dim"><div class="pb-2"><p class="font-label-md text-label-md text-surface-container-lowest">Sunday Worship Services</p><p>1st Service: 8:00 AM – 10:00 AM</p><p>2nd Service: 10:30 AM – 12:45 PM</p></div><div class="pb-2"><p class="font-label-md text-label-md text-surface-container-lowest">Midweek Prayer &amp; Bible Study</p><p>Wednesdays: 5:30 PM – 7:00 PM</p></div><div><p class="font-label-md text-label-md text-surface-container-lowest">Youth Kesha &amp; Prayer Night</p><p>Every 1st Friday: 9:00 PM</p></div></div></div><div class="space-y-4"><h3 class="font-title-lg text-title-lg text-secondary-fixed">Contact &amp; Location</h3><div class="space-y-2 font-body-sm text-body-sm text-primary-fixed-dim"><div class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary-fixed text-sm mt-1">location_on</span><span>Along Eldoret-Kitale Highway, Kitale Town, Trans-Nzoia County, Kenya</span></div><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary-fixed text-sm">call</span><span>+254 712 345 678</span></div><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary-fixed text-sm">mail</span><span>info@aicnurukitale.org</span></div></div><div class="bg-primary-container p-4 rounded-xl space-y-2"><p class="font-label-sm text-label-sm text-surface-container-lowest font-bold">Weekly Devotionals</p><p class="font-body-sm text-body-sm text-on-primary-container">Receive scripture verses and sermon notes weekly.</p><div class="flex items-center gap-2"><input class="w-full px-3 py-1.5 rounded-lg text-body-sm font-body-sm bg-surface-container-lowest text-on-surface focus:outline-none" placeholder="Your email address" type="email"/><button class="px-3 py-1.5 rounded-lg bg-secondary text-on-secondary text-label-sm font-label-sm hover:bg-secondary-container hover:text-on-secondary-container transition-colors">Join</button></div></div></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-4 text-label-sm font-label-sm text-primary-fixed-dim"><p>© 2025 AIC Nuru Kitale. Radiating God's Light. All rights reserved.</p><div class="flex items-center gap-6"><a class="hover:text-surface transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><a class="hover:text-surface transition-colors" data-path="terms-of-worship" href="#">Terms &amp; Guidelines</a><a class="hover:text-surface transition-colors" data-path="contact" href="#">Pastoral Desk</a></div></div></div></footer></body></html>

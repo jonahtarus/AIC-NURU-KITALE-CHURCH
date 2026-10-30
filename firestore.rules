@@ -1,0 +1,120 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Default deny catch-all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Helper functions
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isSignedIn() && (
+        (request.auth.token.email == 'jonahtarus20@gmail.com') ||
+        exists(/databases/$(database)/documents/admins/$(request.auth.uid)) ||
+        (request.auth.token.email != null && exists(/databases/$(database)/documents/admins/$(request.auth.token.email)))
+      );
+    }
+
+    // Entity validation helpers
+    function isValidSiteSetting(data) {
+      return data.welcomeTitle is string && data.welcomeTitle.size() <= 200 &&
+             data.welcomeMessage is string && data.welcomeMessage.size() <= 3000 &&
+             (!('welcomeSubtitle' in data) || (data.welcomeSubtitle is string && data.welcomeSubtitle.size() <= 300)) &&
+             (!('bannerImageUrl' in data) || (data.bannerImageUrl is string && data.bannerImageUrl.size() <= 1000000)) &&
+             (!('phone' in data) || (data.phone is string && data.phone.size() <= 100)) &&
+             (!('email' in data) || (data.email is string && data.email.size() <= 150)) &&
+             (!('address' in data) || (data.address is string && data.address.size() <= 300)) &&
+             (!('sundayServices' in data) || (data.sundayServices is string && data.sundayServices.size() <= 500));
+    }
+
+    function isValidAnnouncement(data) {
+      return data.id is string && data.id.size() <= 128 &&
+             data.title is string && data.title.size() <= 200 &&
+             data.date is string && data.date.size() <= 100 &&
+             data.content is string && data.content.size() <= 5000 &&
+             (!('category' in data) || (data.category is string && data.category.size() <= 100)) &&
+             (!('pinned' in data) || data.pinned is bool) &&
+             (!('imageUrl' in data) || (data.imageUrl is string && data.imageUrl.size() <= 1000000)) &&
+             (!('createdAt' in data) || (data.createdAt is string && data.createdAt.size() <= 100));
+    }
+
+    function isValidContentItem(data) {
+      return data.id is string && data.id.size() <= 128 &&
+             data.type is string && (data.type in ['sermon', 'choir', 'event', 'article']) &&
+             data.title is string && data.title.size() <= 250 &&
+             data.date is string && data.date.size() <= 100 &&
+             data.description is string && data.description.size() <= 5000 &&
+             (!('mediaUrl' in data) || (data.mediaUrl is string && data.mediaUrl.size() <= 1000000)) &&
+             (!('speakerOrArtist' in data) || (data.speakerOrArtist is string && data.speakerOrArtist.size() <= 200)) &&
+             (!('category' in data) || (data.category is string && data.category.size() <= 100)) &&
+             (!('createdAt' in data) || (data.createdAt is string && data.createdAt.size() <= 100));
+    }
+
+    function isValidTeamMember(data) {
+      return data.id is string && data.id.size() <= 128 &&
+             data.name is string && data.name.size() <= 150 &&
+             data.role is string && data.role.size() <= 150 &&
+             data.bio is string && data.bio.size() <= 3000 &&
+             (!('photoUrl' in data) || (data.photoUrl is string && data.photoUrl.size() <= 1000000)) &&
+             (!('phone' in data) || (data.phone is string && data.phone.size() <= 100)) &&
+             (!('order' in data) || (data.order is number));
+    }
+
+    function isValidAdminUser(data) {
+      return data.email is string && data.email.size() <= 150 &&
+             data.role is string && data.role == 'admin';
+    }
+
+    // Site Settings (Public read, admin write)
+    match /site_settings/{settingId} {
+      allow read: if true;
+      allow create, update: if isAdmin() && isValidId(settingId) && isValidSiteSetting(incoming());
+      allow delete: if isAdmin() && isValidId(settingId);
+    }
+
+    // Announcements (Public read, admin write)
+    match /announcements/{announcementId} {
+      allow read: if true;
+      allow create, update: if isAdmin() && isValidId(announcementId) && isValidAnnouncement(incoming());
+      allow delete: if isAdmin() && isValidId(announcementId);
+    }
+
+    // Content Items - Sermons, Choir Media, Articles (Public read, admin write)
+    match /content_items/{itemId} {
+      allow read: if true;
+      allow create, update: if isAdmin() && isValidId(itemId) && isValidContentItem(incoming());
+      allow delete: if isAdmin() && isValidId(itemId);
+    }
+
+    // Team Members - Pastoral & Leadership team bios (Public read, admin write)
+    match /team_members/{memberId} {
+      allow read: if true;
+      allow create, update: if isAdmin() && isValidId(memberId) && isValidTeamMember(incoming());
+      allow delete: if isAdmin() && isValidId(memberId);
+    }
+
+    // Admins Collection (Only authenticated admins can inspect, admin write)
+    match /admins/{adminId} {
+      allow read: if isSignedIn();
+      allow create, update: if isAdmin() && isValidId(adminId) && isValidAdminUser(incoming());
+      allow delete: if isAdmin() && isValidId(adminId);
+    }
+  }
+}

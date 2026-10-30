@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary-fixed-variant":"#5f4100","on-error-container":"#93000a","background":"#f7f9ff","outline":"#74777e","surface-container-lowest":"#ffffff","secondary":"#7d5800","on-background":"#0b1d2d","primary-container":"#122b44","inverse-primary":"#b1c8e8","on-primary":"#ffffff","surface-tint":"#49607c","surface":"#f7f9ff","secondary-fixed-dim":"#f5bd58","on-tertiary-fixed-variant":"#005138","on-secondary":"#ffffff","on-primary-container":"#7b93b1","primary-fixed-dim":"#b1c8e8","tertiary-fixed":"#98f5c9","primary-fixed":"#d1e4ff","secondary-container":"#fec65f","error":"#ba1a1a","on-secondary-fixed":"#271900","on-tertiary-fixed":"#002114","outline-variant":"#c4c6ce","primary":"#00162c","secondary-fixed":"#ffdea9","on-tertiary":"#ffffff","on-surface-variant":"#43474d","surface-container":"#e4efff","on-surface":"#0b1d2d","surface-container-highest":"#d2e4fb","inverse-surface":"#213243","surface-bright":"#f7f9ff","error-container":"#ffdad6","on-tertiary-container":"#44a17b","tertiary-container":"#003120","surface-variant":"#d2e4fb","on-primary-fixed-variant":"#314863","on-primary-fixed":"#011d35","inverse-on-surface":"#e9f1ff","surface-container-low":"#eef4ff","tertiary-fixed-dim":"#7cd8ae","on-secondary-container":"#755100","tertiary":"#001a0f","on-error":"#ffffff","surface-dim":"#cadcf2","surface-container-high":"#d9eaff"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-md":"1rem","space-sm":"0.5rem","space-xl":"2.5rem","space-xs":"0.25rem","gutter-sm":"1rem","space-lg":"1.5rem","margin-sm":"1rem","gutter":"1.5rem","margin":"2rem"},fontFamily:{"title-md":["Plus Jakarta Sans"],"headline-lg-mobile":["Playfair Display"],"body-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-md":["Playfair Display"],"display-sm":["Playfair Display"],"headline-lg":["Playfair Display"],"display-lg":["Playfair Display"],"headline-sm":["Playfair Display"],"label-sm":["Plus Jakarta Sans"],"title-lg":["Plus Jakarta Sans"]},fontSize:{"title-md":["16px",{lineHeight:"24px",fontWeight:"600"}],"headline-lg-mobile":["26px",{lineHeight:"34px",fontWeight:"600"}],"body-md":["15px",{lineHeight:"24px",fontWeight:"400"}],"body-sm":["13px",{lineHeight:"20px",fontWeight:"400"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"label-md":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"headline-md":["24px",{lineHeight:"32px",fontWeight:"600"}],"display-sm":["40px",{lineHeight:"48px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-lg":["32px",{lineHeight:"40px",fontWeight:"600"}],"display-lg":["56px",{lineHeight:"64px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"500"}],"label-sm":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"title-lg":["18px",{lineHeight:"26px",fontWeight:"600"}]}}}};</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary-container text-on-primary px-margin-sm md:px-margin py-2 text-center text-label-sm font-label-sm flex items-center justify-center gap-2"><span class="material-symbols-outlined text-secondary-fixed-dim text-sm">campaign</span><span>Sunday Service: 1st Service 8:00 AM | 2nd Service 10:30 AM (English &amp; Swahili) • Welcome to AIC Nuru Kitale!</span><a class="inline-flex items-center gap-1 text-secondary-fixed font-bold underline hover:text-surface ml-2 transition-colors" data-path="sermons" href="#">Watch Live <span class="material-symbols-outlined text-xs">arrow_forward</span></a></div><div class="h-20 w-full max-w-[1240px] mx-auto px-margin-sm md:px-margin flex items-center justify-between gap-4"><div class="flex items-center gap-3"><img alt="AIC Nuru Kitale Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UiQrzDHBfSafiGCJjY4KQRp6_RraZcur1A89iz8NFc2SQYmqo_N7IvDmw8O6sr-xQTrm8ukjN4zNW7ge7pBfzupv6q46cgPkQLy7Aoz29A92Lc7LfhNeozrysT6AbvbHgq2KsEUAxMbP4fxWaaFYb8JMrcKK-uojy8oNoM9j36RWAWnXccBdkRqCYfuT0bMd209RFjFeH-e-CVLTHgw1vgPsSzrdMc3fB1q2W3dAM"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">AIC NURU</span><span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Kitale</span></div></div><nav class="hidden xl:flex items-center gap-1" data-active-classes="bg-primary text-on-primary font-title-md rounded-lg"><a class="px-3 py-2 text-title-md font-title-md text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" data-path="home" href="#">Home</a><a class="px-3 py-2 text-title-md font-title-md text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" data-path="about-us" href="#">About Us</a><a class="px-3 py-2 text-title-md font-title-md text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" data-path="sermons" href="#">Sermons</a><a aria-current="page" class="px-3 py-2 transition-colors bg-primary text-on-primary font-title-md rounded-lg" data-path="events" href="#">Events</a><a class="px-3 py-2 text-title-md font-title-md text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" data-path="ministries" href="#">Ministries</a><a class="px-3 py-2 text-title-md font-title-md text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" data-path="give" href="#">Give</a><a class="px-3 py-2 text-title-md font-title-md text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-3"><a class="hidden md:inline-flex items-center justify-center px-4 py-2 rounded-lg font-label-md text-label-md bg-transparent text-primary hover:bg-surface-container-high transition-colors" data-path="plan-visit" href="#">Plan Your Visit</a><a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-label-md text-label-md bg-secondary text-on-secondary hover:bg-secondary-container hover:text-on-secondary-container shadow-sm transition-all" data-path="give" href="#"><span class="material-symbols-outlined text-sm">favorite</span><span>Give / Sadaka</span></a><div class="pl-2"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAc_Mj09ypW4_ikiCXtn-1BBlucasC2Vv0g2dICupjBQSHI3d1dXMLmQDauPyFYJGAwHVRwpXjAQry5ZvfY2NeP4ZSE6Qcel3dYIJD0H40OnWPU8FfHmaE2J0hksk5ZU1SNF6XigAj5GFtNNifwpIYyG5l8GhoHnxFcNxq-u3TIwopKyzO0LdEppBV7fjj8L7BzwCXxQuGIuPdCTIu1YLdHiFR6QfjLuF2WvBG2uvM"/></div></div></div></header><main class="w-full pt-20 bg-background flex-1"><div class="flex flex-col w-full">
+<section class="relative w-full overflow-hidden bg-surface-container-low py-space-xl">
+<div class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-secondary-fixed opacity-30 blur-3xl pointer-events-none"></div>
+<div class="absolute left-1/4 -bottom-32 w-80 h-80 rounded-full bg-surface-container-highest opacity-50 blur-2xl pointer-events-none"></div>
+<div class="relative w-full max-w-[1240px] mx-auto px-margin-sm md:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-space-lg">
+<div class="max-w-3xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container text-label-sm font-label-sm mb-3">
+<span class="material-symbols-outlined text-sm">calendar_month</span>
+<span>Season of Grace &amp; Fellowship • Trans-Nzoia</span>
+</div>
+<h1 class="font-display-sm text-display-sm text-primary tracking-tight">
+            Church Events &amp; Fellowship Calendar
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2">
+            Connect, fellowship, and grow in community. Discover what's happening at AIC Nuru Kitale this season.
+          </p>
+</div>
+<div class="flex items-center self-start md:self-end bg-surface-container p-1 rounded-xl shadow-sm">
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all" id="btn-list-view" onclick="switchView('list')">
+<span class="material-symbols-outlined text-sm">view_agenda</span>
+<span>List View</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-primary transition-all" id="btn-month-view" onclick="switchView('month')">
+<span class="material-symbols-outlined text-sm">calendar_view_month</span>
+<span>Month Calendar</span>
+</button>
+</div>
+</div>
+<div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
+<button class="category-chip px-4 py-2 rounded-full font-label-md text-label-md bg-primary text-on-primary whitespace-nowrap shadow-sm transition-all" onclick="filterCategory(this, 'all')">
+          All Events (24)
+        </button>
+<button class="category-chip px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-highest text-on-surface whitespace-nowrap hover:bg-surface-dim transition-all" onclick="filterCategory(this, 'sunday')">
+          Sunday Services
+        </button>
+<button class="category-chip px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-highest text-on-surface whitespace-nowrap hover:bg-surface-dim transition-all" onclick="filterCategory(this, 'kesha')">
+          Kesha &amp; Prayer
+        </button>
+<button class="category-chip px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-highest text-on-surface whitespace-nowrap hover:bg-surface-dim transition-all" onclick="filterCategory(this, 'youth')">
+          Youth &amp; Young Adults
+        </button>
+<button class="category-chip px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-highest text-on-surface whitespace-nowrap hover:bg-surface-dim transition-all" onclick="filterCategory(this, 'women')">
+          Women's Fellowship
+        </button>
+<button class="category-chip px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-highest text-on-surface whitespace-nowrap hover:bg-surface-dim transition-all" onclick="filterCategory(this, 'men')">
+          Men's Ministry
+        </button>
+<button class="category-chip px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-highest text-on-surface whitespace-nowrap hover:bg-surface-dim transition-all" onclick="filterCategory(this, 'outreach')">
+          Community Outreach
+        </button>
+</div>
+</div>
+</section>
+<section class="w-full max-w-[1240px] mx-auto px-margin-sm md:px-margin -mt-6 z-10">
+<div class="relative overflow-hidden rounded-2xl bg-primary text-on-primary shadow-xl">
+<div class="absolute inset-0 bg-cover bg-center opacity-25 mix-blend-luminosity" data-alt="Vibrant African Christian church congregation singing worship in sanctuary hall, warm golden light beaming from high church windows over worshippers raising hands in Kitale Kenya." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDjU-iaAXUnezI3CbSnv0nIXwyDbG5acGMaluYp5hUR9fN_5_QgXKpZ34XQu5HvJ0rWaxyftDiqBDYXjQMtE64S8X2ycd3CGGaBLd4Hyn1lTPDF6t4lDGjOO-4hXgxQi8K1eRlHFv4KCzrvo1PngoceQH2TZ_krkBXsPR5FKYDo4wWMuKU8fp1vjCxxiSeIUx9N7fZIH_h3CJcAyHiXgo9qreOqQyT3gjK3bWr7qZk')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/95 to-primary-container/80"></div>
+<div class="relative grid grid-cols-1 lg:grid-cols-12 gap-8 p-6 md:p-10 lg:p-12 items-center">
+<div class="lg:col-span-8 space-y-5">
+<div class="flex flex-wrap items-center gap-3">
+<span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-secondary text-on-secondary text-label-sm font-label-sm tracking-wider uppercase">
+<span class="w-2 h-2 rounded-full bg-surface animate-ping"></span>
+              Flagship Annual Gathering
+            </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-lowest/15 text-tertiary-fixed text-label-sm font-label-sm backdrop-blur-sm">
+<span class="material-symbols-outlined text-xs">verified</span>
+              Open • Free Admission
+            </span>
+</div>
+<div class="space-y-2">
+<h2 class="font-headline-lg text-headline-lg text-surface-container-lowest tracking-tight">
+              AIC Nuru Annual End-of-Year Thanksgiving &amp; Commissioning Conference
+            </h2>
+<div class="inline-block bg-secondary-fixed/15 text-secondary-fixed px-3.5 py-1 rounded-md text-title-md font-title-md italic">
+              Theme: “Rooted &amp; Built Up in Him” • Colossians 2:7
+            </div>
+</div>
+<p class="font-body-md text-body-md text-primary-fixed-dim leading-relaxed max-w-2xl">
+            Four transformational days of profound biblical teaching, round-the-clock intercession, youth breakout symposiums, and celebratory praise as we dedicate the coming year to our Lord Jesus Christ.
+          </p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+<div class="flex items-center gap-3 bg-surface-container-lowest/10 p-3 rounded-xl backdrop-blur-sm">
+<span class="material-symbols-outlined text-secondary-fixed text-2xl">event</span>
+<div>
+<p class="font-label-sm text-label-sm text-surface-container-lowest uppercase tracking-wider">Conference Dates</p>
+<p class="font-title-md text-title-md text-surface-tint">Dec 28 – 31, 2023</p>
+</div>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-lowest/10 p-3 rounded-xl backdrop-blur-sm">
+<span class="material-symbols-outlined text-secondary-fixed text-2xl">pin_drop</span>
+<div>
+<p class="font-label-sm text-label-sm text-surface-container-lowest uppercase tracking-wider">Venue Location</p>
+<p class="font-title-md text-title-md text-surface-tint">Main Sanctuary &amp; Amphitheatre</p>
+</div>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-lowest/10 p-3 rounded-xl backdrop-blur-sm">
+<span class="material-symbols-outlined text-secondary-fixed text-2xl">groups</span>
+<div>
+<p class="font-label-sm text-label-sm text-surface-container-lowest uppercase tracking-wider">Expected Guests</p>
+<p class="font-title-md text-title-md text-surface-tint">1,800+ Congregants</p>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<div class="flex items-center -space-x-2">
+<img class="w-10 h-10 rounded-full object-cover shadow-md" data-alt="Portrait of an African senior bishop smiling warmly in formal clergy collar with soft daylight behind him." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3VAKaL97MOZ2z9p6lrKytpy8F2MKD8sQDllFHNiDsn-vUJb5rdV8gKxxXPR-7X5P1NrSHNU_53Pwj7ig9QmFwF6d6IUZ6SC1lxR4_16LZWssqL02XqRrXUuEKM-XScrFmxm9l-bo2jVphtkzDV7bh01PMmrHME8YAtg6anVUg7euEJe3x2PTd9yojWE5y6hS_zZFhSWHoeqJ8QpZratfX6Z4G1RibGUKJev4g2Ps"/>
+<img class="w-10 h-10 rounded-full object-cover shadow-md" data-alt="Portrait of a cheerful African woman worship leader wearing elegant gold and navy headwrap with warm stage lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv_Oyo9s5Bqwf1O0DGBVRYjaRP4CklCH-G6RhRfVD-XXl_Pg2BdkHujJdA4NjWzRjjD6LTnWzA4ugn07znhrEHdwkAX4-rbU5F04sS_E4U1_FLC0XakAwZjz3dDdBQ3lcqdGjtKqw_jK3AI_TvIu6CZidW3HOVoUlmi5nME7uHCc8pcmJs3wQQvhmbsXgPEo3yIJ6rPLm4DJiBcpdApfpWWlyAdrHHpXYPTZ9VwiA"/>
+<img class="w-10 h-10 rounded-full object-cover shadow-md" data-alt="Portrait of a passionate African youth evangelist preacher in modern navy suit smiling confidently." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaooPTaEKsFKcU4W7kBWMfm2xMKR1meDwpfCeNReyOjHlEbCX3IeQdw7BmaN9typX1NL7kXaVtceqUqtICB-wcCx64fNXRAv6_u7Q457YMoVPfdiD1MHh3KP_tOwuI7qdLEnYyosAu7P8HN-BKvilRtJYV4MYca3_053Apo827kQc7behMwZKmpHuH2Lg9qgTaG6KFdIxxsqBUcPc1EQeGv9eLBLykxNL864GfPvQ"/>
+<div class="w-10 h-10 rounded-full bg-secondary text-primary font-label-sm flex items-center justify-center shadow-md font-bold">
+                +4
+              </div>
+</div>
+<span class="font-body-sm text-body-sm text-primary-fixed-dim">
+              Guest Speakers: Bishop Silas Yego, Rev. Dr. Joyce Chege • Nuru Mass Choir
+            </span>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-4 bg-surface-container-lowest p-6 rounded-xl text-on-surface shadow-xl">
+<div class="flex items-center justify-between pb-3 bg-surface-container-low p-3 rounded-lg">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Delegate Pass</span>
+<p class="font-title-lg text-title-lg text-primary">All Sessions Inclusive</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-3xl">confirmation_number</span>
+</div>
+<div class="space-y-2">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Morning Plenary</span>
+<span class="font-title-md text-title-md text-primary">8:30 AM – 12:30 PM</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Breakout Fellowships</span>
+<span class="font-title-md text-title-md text-primary">2:00 PM – 4:30 PM</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Evening Revival Rally</span>
+<span class="font-title-md text-title-md text-primary">5:30 PM – 8:30 PM</span>
+</div>
+</div>
+<div class="pt-2 flex flex-col gap-2.5">
+<button class="w-full py-3.5 px-4 rounded-xl font-label-md text-label-md bg-secondary text-on-secondary hover:bg-secondary-container hover:text-on-secondary-container shadow-md transition-all flex items-center justify-center gap-2" onclick="openRegistrationModal()">
+<span class="material-symbols-outlined text-base">how_to_reg</span>
+<span>Register Your Family</span>
+</button>
+<a class="w-full py-3 px-4 rounded-xl font-label-md text-label-md bg-surface-container hover:bg-surface-container-high text-primary text-center transition-all flex items-center justify-center gap-2" href="#">
+<span class="material-symbols-outlined text-base">download</span>
+<span>Download Conference Program (PDF)</span>
+</a>
+</div>
+<p class="font-label-sm text-label-sm text-center text-on-surface-variant">
+            Childcare and Sunday School provisions provided for ages 2–12.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<section class="w-full max-w-[1240px] mx-auto px-margin-sm md:px-margin py-space-xl">
+<div class="space-y-6" id="list-view-container">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary">Upcoming Calendar Schedule</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">November – December 2023 Parish Gatherings</p>
+</div>
+<div class="flex items-center gap-2 text-label-sm font-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-secondary">notifications_active</span>
+<span>Automatic SMS reminders sent 24h prior to registered events</span>
+</div>
+</div>
+<div class="event-card-item group rounded-2xl bg-surface-container-lowest p-6 shadow-sm hover:shadow-md transition-all" data-type="kesha">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+<div class="lg:col-span-2 flex flex-row lg:flex-col items-center justify-center p-4 bg-primary-container text-on-primary rounded-xl text-center gap-2 lg:gap-0">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">Fri • NOV</span>
+<span class="font-display-sm text-display-sm text-surface-container-lowest font-bold leading-none my-1">24</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">2023</span>
+</div>
+<div class="lg:col-span-7 space-y-2">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-3 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm">
+                Kesha &amp; Prayer
+              </span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">
+                All-Night Vigil
+              </span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary group-hover:text-secondary transition-colors">
+              Overnight Kesha &amp; Prayer Watch: “Breaking Chains &amp; Setting Altars”
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Join the intercessory ministry and pastoral council for an intense night of thanksgiving, spiritual warfare, family reconciliation, and prevailing prayer for Trans-Nzoia County.
+            </p>
+<div class="flex flex-wrap items-center gap-4 text-body-sm font-body-sm text-on-surface-variant pt-1">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-secondary">schedule</span> 9:00 PM – 5:00 AM</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-secondary">pin_drop</span> Main Sanctuary</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-secondary">person</span> Host: Pastor Ezekiel Ruto</span>
+</div>
+</div>
+<div class="lg:col-span-3 flex flex-col gap-2.5">
+<button class="w-full py-2.5 px-4 rounded-xl font-label-md text-label-md bg-secondary text-on-secondary hover:bg-secondary-container hover:text-on-secondary-container transition-all flex items-center justify-center gap-2" onclick="registerEvent('Overnight Kesha &amp; Prayer Watch')">
+<span class="material-symbols-outlined text-sm">bookmark_add</span>
+<span>Register Attendance</span>
+</button>
+<a class="w-full py-2.5 px-4 rounded-xl font-label-md text-label-md bg-surface-container-high hover:bg-surface-dim text-primary transition-all flex items-center justify-center gap-2" href="https://calendar.google.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm">event</span>
+<span>Add to Google Calendar</span>
+</a>
+</div>
+</div>
+</div>
+<div class="event-card-item group rounded-2xl bg-surface-container-lowest p-6 shadow-sm hover:shadow-md transition-all" data-type="youth">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+<div class="lg:col-span-2 flex flex-row lg:flex-col items-center justify-center p-4 bg-primary text-on-primary rounded-xl text-center gap-2 lg:gap-0">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">Sat • NOV</span>
+<span class="font-display-sm text-display-sm text-surface-container-lowest font-bold leading-none my-1">25</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">2023</span>
+</div>
+<div class="lg:col-span-7 space-y-2">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-3 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm">
+                Youth &amp; Young Adults
+              </span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+                Inter-Fellowship Sports
+              </span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary group-hover:text-secondary transition-colors">
+              Trans-Nzoia Youth Sports &amp; Worship Gala
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              7-a-side football tournaments, volleyball derbies, spoken-word poetry showcase, followed by an open-air sunset gospel worship praise experience under the Kitale skies.
+            </p>
+<div class="flex flex-wrap items-center gap-4 text-body-sm font-body-sm text-on-surface-variant pt-1">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-secondary">schedule</span> 10:00 AM – 4:00 PM</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-secondary">pin_drop</span> Kitale Grounds (Near Showground)</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-secondary">sports_soccer</span> 12 Competing Parish Teams</span>
+</div>
+</div>
+<div class="lg:col-span-3 flex flex-col gap-2.5">
+<button class="w-full py-2.5 px-4 rounded-xl font-label-md text-label-md bg-secondary text-on-secondary hover:bg-secondary-container hover:text-on-secondary-container transition-all flex items-center justify-center gap-2" onclick="registerEvent('Youth Sports &amp; Worship Gala')">
+<span class="material-symbols-outlined text-sm">group_add</span>
+<span>Register Team / Individual</span>
+</button>
+<a class="w-full py-2.5 px-4 rounded-xl font-label-md text-label-md bg-surface-container-high hover:bg-surface-dim text-primary transition-all flex items-center justify-center gap-2" href="https://calendar.google.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm">event</span>
+<span>Add to Google Calendar</span>
+</a>
+</div>
+</div>
+</div>
+<div class="event-card-item group rounded-2xl bg-surface-container-lowest p-6 shadow-sm hover:shadow-md transition-all" data-type="men">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+<div class="lg:col-span-2 flex flex-row lg:flex-col items-center justify-center p-4 bg-primary-container text-on-primary rounded-xl text-center gap-2 lg:gap-0">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">Sat • DEC</span>
+<span class="font-display-sm text-display-sm text-surface-container-lowest font-bold leading-none my-1">02</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">2023</span>
+</div>
+<div class="lg:col-span-7 space-y-2">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-3 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm">
+                Men's Ministry
+              </span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">
+                Breakfast Fellowship
+              </span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary group-hover:text-secondary transition-colors">
+              Men of Honor Monthly Breakfast: “Priesthood of the Home &amp; Marketplace Integrity”
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Equipping fathers, young professionals, and elders with actionable biblical principles for ethical leadership, financial stewardship in turbulent economies, and mentoring the next generation.
+            </p>
+<div class="flex flex-wrap items-center gap-4 text-body-sm font-body-sm text-on-surface-variant pt-1">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-secondary">schedule</span> 7:30 AM – 10:00 AM</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-secondary">pin_drop</span> Fellowship Hall B</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-secondary">record_voice_over</span> Keynote: Elder Dr. Makokha</span>
+</div>
+</div>
+<div class="lg:col-span-3 flex flex-col gap-2.5">
+<button class="w-full py-2.5 px-4 rounded-xl font-label-md text-label-md bg-secondary text-on-secondary hover:bg-secondary-container hover:text-on-secondary-container transition-all flex items-center justify-center gap-2" onclick="registerEvent('Men of Honor Monthly Breakfast')">
+<span class="material-symbols-outlined text-sm">restaurant</span>
+<span>Reserve Seat (KES 300)</span>
+</button>
+<a class="w-full py-2.5 px-4 rounded-xl font-label-md text-label-md bg-surface-container-high hover:bg-surface-dim text-primary transition-all flex items-center justify-center gap-2" href="https://calendar.google.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm">event</span>
+<span>Add to Google Calendar</span>
+</a>
+</div>
+</div>
+</div>
+<div class="event-card-item group rounded-2xl bg-surface-container-lowest p-6 shadow-sm hover:shadow-md transition-all" data-type="sunday">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+<div class="lg:col-span-2 flex flex-row lg:flex-col items-center justify-center p-4 bg-primary text-on-primary rounded-xl text-center gap-2 lg:gap-0">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">Sun • DEC</span>
+<span class="font-display-sm text-display-sm text-surface-container-lowest font-bold leading-none my-1">03</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">2023</span>
+</div>
+<div class="lg:col-span-7 space-y-2">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-3 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm">
+                Children's Ministry
+              </span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+                Christmas Preparation
+              </span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary group-hover:text-secondary transition-colors">
+              Sunday School Christmas Carol Rehearsals &amp; Nativity Play Cast Prep
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Mandatory rehearsal for all children aged 4 to 14 preparing for the festive Christmas Eve presentation. Light snacks and music workbooks will be distributed to all attending Sunday School pupils.
+            </p>
+<div class="flex flex-wrap items-center gap-4 text-body-sm font-body-sm text-on-surface-variant pt-1">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-secondary">schedule</span> 1:00 PM – 3:30 PM</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-secondary">pin_drop</span> Children's Chapel &amp; Resource Center</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-secondary">escalator_warning</span> Directorship: Teacher Grace &amp; Team</span>
+</div>
+</div>
+<div class="lg:col-span-3 flex flex-col gap-2.5">
+<button class="w-full py-2.5 px-4 rounded-xl font-label-md text-label-md bg-secondary text-on-secondary hover:bg-secondary-container hover:text-on-secondary-container transition-all flex items-center justify-center gap-2" onclick="registerEvent('Sunday School Carol Rehearsals')">
+<span class="material-symbols-outlined text-sm">child_care</span>
+<span>Register Child</span>
+</button>
+<a class="w-full py-2.5 px-4 rounded-xl font-label-md text-label-md bg-surface-container-high hover:bg-surface-dim text-primary transition-all flex items-center justify-center gap-2" href="https://calendar.google.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm">event</span>
+<span>Add to Google Calendar</span>
+</a>
+</div>
+</div>
+</div>
+<div class="event-card-item group rounded-2xl bg-surface-container-lowest p-6 shadow-sm hover:shadow-md transition-all" data-type="outreach">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+<div class="lg:col-span-2 flex flex-row lg:flex-col items-center justify-center p-4 bg-tertiary-container text-on-tertiary rounded-xl text-center gap-2 lg:gap-0">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary-fixed">Sat • DEC</span>
+<span class="font-display-sm text-display-sm text-surface-container-lowest font-bold leading-none my-1">09</span>
+<span class="font-label-sm text-label-sm text-tertiary-fixed-dim">2023</span>
+</div>
+<div class="lg:col-span-7 space-y-2">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-3 py-0.5 rounded-full bg-tertiary-fixed/30 text-tertiary font-label-sm text-label-sm">
+                Community Outreach
+              </span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">
+                Free Compassion Ministry
+              </span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary group-hover:text-secondary transition-colors">
+              Medical Camp &amp; Free Screening Outreach: “Healing in His Wings”
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              In partnership with Kitale District Hospital medical doctors and Christian healthcare practitioners. Offering free consultations, diabetes &amp; hypertension checks, dental hygiene, pediatric clinic, and prescription giveaways.
+            </p>
+<div class="flex flex-wrap items-center gap-4 text-body-sm font-body-sm text-on-surface-variant pt-1">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-secondary">schedule</span> 8:30 AM – 3:00 PM</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-secondary">pin_drop</span> AIC Nuru Open Grounds</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-secondary">volunteer_activism</span> Volunteer Medical Staff Needed</span>
+</div>
+</div>
+<div class="lg:col-span-3 flex flex-col gap-2.5">
+<button class="w-full py-2.5 px-4 rounded-xl font-label-md text-label-md bg-secondary text-on-secondary hover:bg-secondary-container hover:text-on-secondary-container transition-all flex items-center justify-center gap-2" onclick="registerEvent('Medical Camp &amp; Free Screening Outreach')">
+<span class="material-symbols-outlined text-sm">handshake</span>
+<span>Volunteer / Register</span>
+</button>
+<a class="w-full py-2.5 px-4 rounded-xl font-label-md text-label-md bg-surface-container-high hover:bg-surface-dim text-primary transition-all flex items-center justify-center gap-2" href="https://calendar.google.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm">event</span>
+<span>Add to Google Calendar</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden space-y-6" id="month-view-container">
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm">
+<div class="flex items-center justify-between pb-6">
+<div class="flex items-center gap-3">
+<h3 class="font-headline-md text-headline-md text-primary">December 2023</h3>
+<span class="px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed text-label-sm font-label-sm">Kitale Parish</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary"><span class="material-symbols-outlined">chevron_left</span></button>
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+</div>
+<div class="grid grid-cols-7 gap-2 text-center font-label-md text-label-md text-on-surface-variant pb-2">
+<span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+</div>
+<div class="grid grid-cols-7 gap-2">
+<div class="h-28 p-2 rounded-xl bg-surface-container-low opacity-40 text-label-sm">26</div>
+<div class="h-28 p-2 rounded-xl bg-surface-container-low opacity-40 text-label-sm">27</div>
+<div class="h-28 p-2 rounded-xl bg-surface-container-low opacity-40 text-label-sm">28</div>
+<div class="h-28 p-2 rounded-xl bg-surface-container-low opacity-40 text-label-sm">29</div>
+<div class="h-28 p-2 rounded-xl bg-surface-container-low opacity-40 text-label-sm">30</div>
+<div class="h-28 p-2 rounded-xl bg-surface-container-low text-label-sm">1</div>
+<div class="h-28 p-2 rounded-xl bg-secondary-container/30 text-label-sm relative">
+<span class="font-bold text-secondary">2</span>
+<div class="mt-1 p-1 rounded bg-secondary text-on-secondary text-[11px] leading-tight font-semibold line-clamp-2">
+              Men's Breakfast (7:30 AM)
+            </div>
+</div>
+<div class="h-28 p-2 rounded-xl bg-primary/5 text-label-sm relative">
+<span class="font-bold text-primary">3</span>
+<div class="mt-1 p-1 rounded bg-primary text-on-primary text-[11px] leading-tight font-semibold line-clamp-2">
+              Carol Rehearsals (1 PM)
+            </div>
+</div>
+<div class="h-28 p-2 rounded-xl bg-surface-container-low text-label-sm">4</div>
+<div class="h-28 p-2 rounded-xl bg-surface-container-low text-label-sm">5</div>
+<div class="h-28 p-2 rounded-xl bg-surface-container-low text-label-sm">
+<span>6</span>
+<div class="mt-1 p-1 rounded bg-surface-container-high text-on-surface text-[11px] leading-tight font-semibold">
+              Midweek Prayer
+            </div>
+</div>
+<div class="h-28 p-2 rounded-xl bg-surface-container-low text-label-sm">7</div>
+<div class="h-28 p-2 rounded-xl bg-surface-container-low text-label-sm">8</div>
+<div class="h-28 p-2 rounded-xl bg-tertiary-container text-on-tertiary text-label-sm relative">
+<span class="font-bold text-tertiary-fixed">9</span>
+<div class="mt-1 p-1 rounded bg-tertiary-fixed text-on-tertiary-fixed text-[11px] leading-tight font-semibold line-clamp-2">
+              Medical Outreach Camp
+            </div>
+</div>
+<div class="h-28 p-2 rounded-xl bg-surface-container-low text-label-sm">
+<span>10</span>
+<div class="mt-1 p-1 rounded bg-surface-container-high text-on-surface text-[11px] leading-tight font-semibold">
+              Sunday Worship
+            </div>
+</div>
+<div class="h-28 p-2 rounded-xl bg-surface-container-low text-label-sm">11</div>
+<div class="h-28 p-2 rounded-xl bg-surface-container-low text-label-sm">12</div>
+<div class="h-28 p-2 rounded-xl bg-surface-container-low text-label-sm">13</div>
+<div class="h-28 p-2 rounded-xl bg-surface-container-low text-label-sm">14</div>
+<div class="h-28 p-2 rounded-xl bg-surface-container-low text-label-sm">15</div>
+<div class="h-28 p-2 rounded-xl bg-surface-container-low text-label-sm">16</div>
+<div class="h-28 p-2 rounded-xl bg-surface-container-low text-label-sm">
+<span>17</span>
+<div class="mt-1 p-1 rounded bg-surface-container-high text-on-surface text-[11px] leading-tight font-semibold">
+              Carol Sunday
+            </div>
+</div>
+<div class="h-28 p-2 rounded-xl bg-surface-container-low text-label-sm">18</div>
+<div class="h-28 p-2 rounded-xl bg-surface-container-low text-label-sm">19</div>
+<div class="h-28 p-2 rounded-xl bg-surface-container-low text-label-sm">20</div>
+<div class="h-28 p-2 rounded-xl bg-surface-container-low text-label-sm">21</div>
+<div class="h-28 p-2 rounded-xl bg-surface-container-low text-label-sm">22</div>
+<div class="h-28 p-2 rounded-xl bg-surface-container-low text-label-sm">23</div>
+<div class="h-28 p-2 rounded-xl bg-surface-container-low text-label-sm">
+<span>24</span>
+<div class="mt-1 p-1 rounded bg-secondary text-on-secondary text-[11px] leading-tight font-semibold">
+              Christmas Eve Vigil
+            </div>
+</div>
+<div class="h-28 p-2 rounded-xl bg-secondary-container/40 text-label-sm">
+<span class="font-bold text-secondary">25</span>
+<div class="mt-1 p-1 rounded bg-secondary text-on-secondary text-[11px] leading-tight font-semibold">
+              Christmas Service
+            </div>
+</div>
+<div class="h-28 p-2 rounded-xl bg-surface-container-low text-label-sm">26</div>
+<div class="h-28 p-2 rounded-xl bg-surface-container-low text-label-sm">27</div>
+<div class="h-28 p-2 rounded-xl bg-primary text-on-primary text-label-sm">
+<span class="font-bold text-secondary-fixed">28</span>
+<div class="mt-1 p-1 rounded bg-secondary-fixed text-on-secondary-fixed text-[11px] font-bold">
+              Conference Day 1
+            </div>
+</div>
+<div class="h-28 p-2 rounded-xl bg-primary text-on-primary text-label-sm">
+<span class="font-bold text-secondary-fixed">29</span>
+<div class="mt-1 p-1 rounded bg-secondary-fixed text-on-secondary-fixed text-[11px] font-bold">
+              Conference Day 2
+            </div>
+</div>
+<div class="h-28 p-2 rounded-xl bg-primary text-on-primary text-label-sm">
+<span class="font-bold text-secondary-fixed">30</span>
+<div class="mt-1 p-1 rounded bg-secondary-fixed text-on-secondary-fixed text-[11px] font-bold">
+              Conference Day 3
+            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="w-full bg-surface-container-low py-space-xl">
+<div class="w-full max-w-[1240px] mx-auto px-margin-sm md:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<div class="lg:col-span-5 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-sm">church</span>
+<span>Church Stewardship &amp; Facilities</span>
+</div>
+<h2 class="font-display-sm text-display-sm text-primary tracking-tight">
+            Host an Event &amp; Sanctuary Reservations
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            AIC Nuru Kitale makes its spiritual sanctuaries, multipurpose fellowship halls, and manicured landscaped grounds available for members of the congregation and partner community organizations.
+          </p>
+<div class="space-y-4">
+<div class="flex items-start gap-4 p-4 rounded-xl bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-secondary text-2xl mt-1">favorite</span>
+<div>
+<h3 class="font-title-md text-title-md text-primary">Weddings &amp; Holy Matrimony</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Includes pastoral pre-marital counsel sessions, main sanctuary setup, sound engineering, and bridal suite access.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-xl bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-secondary text-2xl mt-1">child_friendly</span>
+<div>
+<h3 class="font-title-md text-title-md text-primary">Child Dedications &amp; Baptisms</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sunday afternoon bookings for baby dedications with small reception arrangement in Fellowship Hall B.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-xl bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-secondary text-2xl mt-1">military_tech</span>
+<div>
+<h3 class="font-title-md text-title-md text-primary">Memorial &amp; Thanksgiving Services</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dedicated pastoral bereavement coordination, live broadcast facilities, and compassionate hospitality support.</p>
+</div>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-highest flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-2xl">picture_as_pdf</span>
+<div>
+<p class="font-label-md text-label-md text-primary">Parish Facility Guidelines &amp; Policies</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">PDF Document • 1.4 MB</p>
+</div>
+</div>
+<a class="px-3 py-2 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm hover:bg-primary-container transition-all" href="#">
+              Download
+            </a>
+</div>
+</div>
+<div class="lg:col-span-7 bg-surface-container-lowest p-6 md:p-8 rounded-2xl shadow-md">
+<div class="flex items-center justify-between pb-6">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary">Facility Reservation Request</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Submit booking inquiry to the Parish Administrator</p>
+</div>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+              Step 1 of 2
+            </span>
+</div>
+<form class="space-y-4" id="facility-booking-form" onsubmit="handleFacilitySubmit(event)">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1.5">Full Name *</label>
+<input class="w-full px-4 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface text-body-md font-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary/50" placeholder="e.g. Samuel Kiprop" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1.5">Phone (M-Pesa registered) *</label>
+<input class="w-full px-4 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface text-body-md font-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary/50" placeholder="+254 7XX XXX XXX" required="" type="tel"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1.5">Email Address *</label>
+<input class="w-full px-4 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface text-body-md font-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary/50" placeholder="s.kiprop@example.com" required="" type="email"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1.5">Membership Status *</label>
+<select class="w-full px-4 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface text-body-md font-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary/50" required="">
+<option value="registered">Registered Communicant Member</option>
+<option value="regular">Regular Attendant / Visitor</option>
+<option value="partner">Partner Christian Ministry</option>
+<option value="community">Community Organization</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1.5">Event Purpose / Type *</label>
+<select class="w-full px-4 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface text-body-md font-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary/50" required="">
+<option value="wedding">Holy Matrimony / Wedding</option>
+<option value="dedication">Child Dedication Service</option>
+<option value="memorial">Memorial Service / Funeral</option>
+<option value="prayer">Ministry Prayer Seminar</option>
+<option value="other">Community Fellowship / Other</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1.5">Sanctuary / Venue Required *</label>
+<select class="w-full px-4 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface text-body-md font-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary/50" required="">
+<option value="main">Main Cathedral Sanctuary (Capacity: 1,200)</option>
+<option value="hall-b">Fellowship Hall B (Capacity: 250)</option>
+<option value="chapel">Children's Chapel (Capacity: 120)</option>
+<option value="grounds">Open-Air Manicured Grounds</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1.5">Requested Date *</label>
+<input class="w-full px-4 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface text-body-md font-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary/50" required="" type="date"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1.5">Estimated Guest Count *</label>
+<input class="w-full px-4 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface text-body-md font-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary/50" min="10" placeholder="e.g. 150" required="" type="number"/>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1.5">Special Technical &amp; Hospitality Requirements</label>
+<textarea class="w-full px-4 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface text-body-md font-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary/50" placeholder="Audio PA, live recording, multimedia projector, choir microphones, tea/pastry arrangements..." rows="3"></textarea>
+</div>
+<div class="p-3 rounded-lg bg-surface-container flex items-center gap-3">
+<input class="w-4 h-4 text-primary rounded" id="terms-agree" required="" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface-variant" for="terms-agree">
+                I agree to the AIC Nuru Kitale Christian doctrine, modesty dress code, and premise care bylaws.
+              </label>
+</div>
+<div class="pt-2 flex flex-col sm:flex-row items-center gap-4">
+<button class="w-full sm:w-auto px-8 py-3.5 rounded-xl font-label-md text-label-md bg-secondary text-on-secondary hover:bg-secondary-container hover:text-on-secondary-container shadow-md transition-all flex items-center justify-center gap-2" type="submit">
+<span class="material-symbols-outlined text-base">send</span>
+<span>Submit Reservation Request</span>
+</button>
+<p class="font-label-sm text-label-sm text-on-surface-variant">
+                The Church Secretariat reviews requests within 48 working hours.
+              </p>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<div class="fixed inset-0 z-50 hidden bg-primary/60 backdrop-blur-sm flex items-center justify-center p-4" id="registration-modal">
+<div class="bg-surface-container-lowest text-on-surface rounded-2xl max-w-lg w-full p-6 md:p-8 shadow-2xl relative">
+<button class="absolute top-4 right-4 p-2 rounded-full hover:bg-surface-container text-on-surface-variant" onclick="closeRegistrationModal()">
+<span class="material-symbols-outlined">close</span>
+</button>
+<div class="flex items-center gap-2 mb-2 text-secondary">
+<span class="material-symbols-outlined">celebration</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Fast Delegate Registration</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2" id="modal-event-title">
+        AIC Nuru End-of-Year Thanksgiving
+      </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+        Please provide family or individual contact details to generate your delegate check-in badge.
+      </p>
+<form class="space-y-4" onsubmit="handleRegistrationSubmit(event)">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Full Representative Name</label>
+<input class="w-full px-4 py-2.5 rounded-lg bg-surface-container-low text-on-surface text-body-md font-body-md focus:outline-none focus:ring-2 focus:ring-secondary/50" placeholder="e.g. Mary Jepkemoi" required="" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Phone Number</label>
+<input class="w-full px-4 py-2.5 rounded-lg bg-surface-container-low text-on-surface text-body-md font-body-md focus:outline-none focus:ring-2 focus:ring-secondary/50" placeholder="07XXXXXXXX" required="" type="tel"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Total Family Seats</label>
+<input class="w-full px-4 py-2.5 rounded-lg bg-surface-container-low text-on-surface text-body-md font-body-md focus:outline-none focus:ring-2 focus:ring-secondary/50" max="15" min="1" required="" type="number" value="1"/>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Residential Estate / Location (Kitale)</label>
+<input class="w-full px-4 py-2.5 rounded-lg bg-surface-container-low text-on-surface text-body-md font-body-md focus:outline-none focus:ring-2 focus:ring-secondary/50" placeholder="e.g. Milimani, Section 6, Bondeni, Lessos..." type="text"/>
+</div>
+<div class="pt-4 flex items-center justify-end gap-3">
+<button class="px-4 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container" onclick="closeRegistrationModal()" type="button">
+            Cancel
+          </button>
+<button class="px-6 py-2.5 rounded-xl font-label-md text-label-md bg-secondary text-on-secondary hover:bg-secondary-container hover:text-on-secondary-container shadow-md" type="submit">
+            Confirm &amp; Receive Badge
+          </button>
+</div>
+</form>
+</div>
+</div>
+<div class="fixed bottom-6 right-6 z-50 hidden bg-primary text-on-primary px-5 py-4 rounded-xl shadow-2xl flex items-center gap-3" id="toast-notification">
+<span class="material-symbols-outlined text-secondary-fixed">check_circle</span>
+<span class="font-body-md text-body-md" id="toast-message">Action completed successfully.</span>
+</div>
+<script>
+    function switchView(view) {
+      const listView = document.getElementById('list-view-container');
+      const monthView = document.getElementById('month-view-container');
+      const btnList = document.getElementById('btn-list-view');
+      const btnMonth = document.getElementById('btn-month-view');
+
+      if (view === 'list') {
+        listView.classList.remove('hidden');
+        monthView.classList.add('hidden');
+        btnList.className = 'flex items-center gap-2 px-4 py-2 rounded-lg font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all';
+        btnMonth.className = 'flex items-center gap-2 px-4 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-primary transition-all';
+      } else {
+        listView.classList.add('hidden');
+        monthView.classList.remove('hidden');
+        btnMonth.className = 'flex items-center gap-2 px-4 py-2 rounded-lg font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all';
+        btnList.className = 'flex items-center gap-2 px-4 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-primary transition-all';
+      }
+    }
+
+    function filterCategory(btn, category) {
+      document.querySelectorAll('.category-chip').forEach(el => {
+        el.className = 'category-chip px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-highest text-on-surface whitespace-nowrap hover:bg-surface-dim transition-all';
+      });
+      btn.className = 'category-chip px-4 py-2 rounded-full font-label-md text-label-md bg-primary text-on-primary whitespace-nowrap shadow-sm transition-all';
+
+      const items = document.querySelectorAll('.event-card-item');
+      items.forEach(item => {
+        const itemType = item.getAttribute('data-type');
+        if (category === 'all' || itemType === category) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    function openRegistrationModal(title) {
+      const modal = document.getElementById('registration-modal');
+      const titleEl = document.getElementById('modal-event-title');
+      if (title) {
+        titleEl.textContent = title;
+      } else {
+        titleEl.textContent = "AIC Nuru Annual Thanksgiving Conference";
+      }
+      modal.classList.remove('hidden');
+    }
+
+    function closeRegistrationModal() {
+      document.getElementById('registration-modal').classList.add('hidden');
+    }
+
+    function registerEvent(title) {
+      openRegistrationModal(title);
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast-notification');
+      const toastMsg = document.getElementById('toast-message');
+      toastMsg.textContent = msg;
+      toast.classList.remove('hidden');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 4500);
+    }
+
+    function handleRegistrationSubmit(e) {
+      e.preventDefault();
+      closeRegistrationModal();
+      showToast('Registration received! An SMS confirmation will be sent shortly.');
+    }
+
+    function handleFacilitySubmit(e) {
+      e.preventDefault();
+      showToast('Facility booking request submitted! The Church Secretariat will reach out.');
+      document.getElementById('facility-booking-form').reset();
+    }
+  </script>
+</div></main><footer class="w-full bg-primary text-on-primary pt-space-xl pb-space-lg"><div class="w-full max-w-[1240px] mx-auto px-margin-sm md:px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-xl"><div class="space-y-4"><div class="flex items-center gap-3"><div class="flex flex-col"><span class="font-headline-md text-headline-md text-surface-container-lowest tracking-tight">AIC Nuru Kitale</span><span class="font-label-sm text-label-sm text-secondary-fixed-dim uppercase tracking-wider">Africa Inland Church • Kenya</span></div></div><p class="font-body-sm text-body-sm text-primary-fixed-dim leading-relaxed">Radiating Christ's love, hope, and truth across Trans-Nzoia and beyond. Grounded in Scripture, thriving in fellowship, and committed to kingdom service.</p><div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-lowest/10 text-tertiary-fixed text-label-sm font-label-sm"><span class="material-symbols-outlined text-sm">payments</span><span>M-Pesa Paybill: <strong>522522</strong> • A/C: <strong>NURU</strong></span></div></div><div class="space-y-3"><h3 class="font-title-lg text-title-lg text-secondary-fixed">Quick Links</h3><ul class="space-y-2 font-body-sm text-body-sm text-primary-fixed-dim"><li><a class="hover:text-surface transition-colors" data-path="about-us" href="#">About Us</a></li><li><a class="hover:text-surface transition-colors" data-path="statement-of-faith" href="#">Statement of Faith</a></li><li><a class="hover:text-surface transition-colors" data-path="sermons" href="#">Sermons Archive</a></li><li><a class="hover:text-surface transition-colors" data-path="events" href="#">Church Calendar</a></li><li><a class="hover:text-surface transition-colors" data-path="ministries" href="#">Youth Ministry &amp; Fellowship</a></li></ul></div><div class="space-y-3"><h3 class="font-title-lg text-title-lg text-secondary-fixed">Gathering Times</h3><div class="space-y-2 font-body-sm text-body-sm text-primary-fixed-dim"><div class="pb-2"><p class="font-label-md text-label-md text-surface-container-lowest">Sunday Worship Services</p><p>1st Service: 8:00 AM – 10:00 AM</p><p>2nd Service: 10:30 AM – 12:45 PM</p></div><div class="pb-2"><p class="font-label-md text-label-md text-surface-container-lowest">Midweek Prayer &amp; Bible Study</p><p>Wednesdays: 5:30 PM – 7:00 PM</p></div><div><p class="font-label-md text-label-md text-surface-container-lowest">Youth Kesha &amp; Prayer Night</p><p>Every 1st Friday: 9:00 PM</p></div></div></div><div class="space-y-4"><h3 class="font-title-lg text-title-lg text-secondary-fixed">Contact &amp; Location</h3><div class="space-y-2 font-body-sm text-body-sm text-primary-fixed-dim"><div class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary-fixed text-sm mt-1">location_on</span><span>Along Eldoret-Kitale Highway, Kitale Town, Trans-Nzoia County, Kenya</span></div><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary-fixed text-sm">call</span><span>+254 712 345 678</span></div><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary-fixed text-sm">mail</span><span>info@aicnurukitale.org</span></div></div><div class="bg-primary-container p-4 rounded-xl space-y-2"><p class="font-label-sm text-label-sm text-surface-container-lowest font-bold">Weekly Devotionals</p><p class="font-body-sm text-body-sm text-on-primary-container">Receive scripture verses and sermon notes weekly.</p><div class="flex items-center gap-2"><input class="w-full px-3 py-1.5 rounded-lg text-body-sm font-body-sm bg-surface-container-lowest text-on-surface focus:outline-none" placeholder="Your email address" type="email"/><button class="px-3 py-1.5 rounded-lg bg-secondary text-on-secondary text-label-sm font-label-sm hover:bg-secondary-container hover:text-on-secondary-container transition-colors">Join</button></div></div></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-4 text-label-sm font-label-sm text-primary-fixed-dim"><p>© 2025 AIC Nuru Kitale. Radiating God's Light. All rights reserved.</p><div class="flex items-center gap-6"><a class="hover:text-surface transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><a class="hover:text-surface transition-colors" data-path="terms-of-worship" href="#">Terms &amp; Guidelines</a><a class="hover:text-surface transition-colors" data-path="contact" href="#">Pastoral Desk</a></div></div></div></footer></body></html>

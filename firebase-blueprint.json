@@ -1,0 +1,102 @@
+{
+  "entities": {
+    "siteSetting": {
+      "title": "SiteSetting",
+      "description": "General site configuration and banner content",
+      "type": "object",
+      "properties": {
+        "welcomeTitle": { "type": "string", "maxLength": 200 },
+        "welcomeSubtitle": { "type": "string", "maxLength": 300 },
+        "welcomeMessage": { "type": "string", "maxLength": 3000 },
+        "bannerImageUrl": { "type": "string", "maxLength": 1000000 },
+        "phone": { "type": "string", "maxLength": 100 },
+        "email": { "type": "string", "maxLength": 150 },
+        "address": { "type": "string", "maxLength": 300 },
+        "sundayServices": { "type": "string", "maxLength": 500 },
+        "updatedAt": { "type": "string", "maxLength": 100 }
+      },
+      "required": ["welcomeTitle", "welcomeMessage"]
+    },
+    "announcement": {
+      "title": "Announcement",
+      "description": "Church news, bulletins and announcements",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "title": { "type": "string", "maxLength": 200 },
+        "date": { "type": "string", "maxLength": 100 },
+        "category": { "type": "string", "maxLength": 100 },
+        "content": { "type": "string", "maxLength": 5000 },
+        "pinned": { "type": "boolean" },
+        "imageUrl": { "type": "string", "maxLength": 1000000 },
+        "createdAt": { "type": "string", "maxLength": 100 }
+      },
+      "required": ["id", "title", "date", "content"]
+    },
+    "contentItem": {
+      "title": "ContentItem",
+      "description": "Sermons, choir videos, and news content items",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "type": { "type": "string", "enum": ["sermon", "choir", "event", "article"] },
+        "title": { "type": "string", "maxLength": 250 },
+        "date": { "type": "string", "maxLength": 100 },
+        "description": { "type": "string", "maxLength": 5000 },
+        "mediaUrl": { "type": "string", "maxLength": 1000000 },
+        "speakerOrArtist": { "type": "string", "maxLength": 200 },
+        "category": { "type": "string", "maxLength": 100 },
+        "createdAt": { "type": "string", "maxLength": 100 }
+      },
+      "required": ["id", "type", "title", "date", "description"]
+    },
+    "teamMember": {
+      "title": "TeamMember",
+      "description": "Leadership and ministry team bios and photos",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "name": { "type": "string", "maxLength": 150 },
+        "role": { "type": "string", "maxLength": 150 },
+        "bio": { "type": "string", "maxLength": 3000 },
+        "photoUrl": { "type": "string", "maxLength": 1000000 },
+        "phone": { "type": "string", "maxLength": 100 },
+        "order": { "type": "number" }
+      },
+      "required": ["id", "name", "role", "bio"]
+    },
+    "adminUser": {
+      "title": "AdminUser",
+      "description": "Approved administrator record",
+      "type": "object",
+      "properties": {
+        "email": { "type": "string", "maxLength": 150 },
+        "role": { "type": "string", "enum": ["admin"] },
+        "addedAt": { "type": "string", "maxLength": 100 }
+      },
+      "required": ["email", "role"]
+    }
+  },
+  "firestore": {
+    "/site_settings/{settingId}": {
+      "schema": "siteSetting",
+      "description": "Global website banner and contact configurations"
+    },
+    "/announcements/{announcementId}": {
+      "schema": "announcement",
+      "description": "Public announcements and news articles"
+    },
+    "/content_items/{itemId}": {
+      "schema": "contentItem",
+      "description": "Content items including sermons, choir media, and church news"
+    },
+    "/team_members/{memberId}": {
+      "schema": "teamMember",
+      "description": "Church pastoral and leadership team biographies and photos"
+    },
+    "/admins/{adminId}": {
+      "schema": "adminUser",
+      "description": "Allowlisted administrator accounts"
+    }
+  }
+}

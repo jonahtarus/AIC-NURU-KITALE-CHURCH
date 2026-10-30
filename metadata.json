@@ -1,0 +1,6 @@
+{
+  "name": "AIC Nuru Kitale",
+  "description": "Official platform for Africa Inland Church Nuru, Kitale - vibrant worship, sermon archives, fellowship calendar, M-Pesa giving, and community ministries.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
